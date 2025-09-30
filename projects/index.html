@@ -508,203 +508,430 @@ var _hmt = _hmt || [];
 
   <!-- Content area for Desktop -->
   <div class="lg:ml-80 pt-20 px-4 py-8">
-    <!-- About Section -->
-<div class="container mx-auto px-4 py-8">
-  <h2 class="text-3xl font-bold mb-8 text-base-content">About Me</h2>
+    <div class="container mx-auto px-4 py-8">
+  <h1 class="text-3xl font-bold mb-8 text-base-content">Research Projects</h1>
 
-  <!-- Avatar -->
-  <div class="p-4 text-center border-base-300 flex flex-col items-center cursor-pointer lg:hidden">
-    <div class="avatar mb-4">
-      <div class="w-24 rounded-full ring ring-primary ring-offset-base-100">
-        <img
-          src="/images/avatar.jpg"
-          alt="Profile"
-          class="transition-transform duration-500 hover:rotate-210 cursor-pointer rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 w-24"
-        />
+  <!-- Filters -->
+  <div class="glass-card p-4 mb-8">
+    <div class="flex flex-wrap gap-4">
+      <!-- Status Filter -->
+      <div class="form-control">
+        <select class="select select-bordered" id="statusFilter">
+          <option value="">All Statuses</option>
+          
+            <option value="current">current</option>
+          
+            <option value="completed">completed</option>
+          
+        </select>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="form-control">
+        <select class="select select-bordered" id="categoryFilter">
+          <option value="">All Categories</option>
+          
+            <option value="Artificial Intelligence">Artificial Intelligence</option>
+          
+            <option value="Bioinformatics">Bioinformatics</option>
+          
+            <option value="Genomics">Genomics</option>
+          
+            <option value="Structural Biology">Structural Biology</option>
+          
+        </select>
+      </div>
+
+      <!-- Search -->
+      <div class="form-control flex-1">
+        <input type="text" placeholder="Search projects..." class="input input-bordered" id="searchInput" />
       </div>
     </div>
-    <h2 class="text-xl font-bold text-base-content">John Doe</h2>
-    <p class="text-base-content opacity-80"></p>
   </div>
 
-<!--About-->
-  <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content">
-    <div class="card-body">
-      <div class="prose max-w-none text-base">
-        I am a researcher passionate about artificial intelligence and computational biology. My work focuses on leveraging machine learning to solve real-world problems. <br><br> Outside of research, I enjoy hiking, writing, and coffee brewing.
+  <!-- Projects List -->
+  <div id="projectsList" class="space-y-6">
+    
+      <div 
+        class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 timeline-item"
+        data-status="current"
+        data-category="Artificial Intelligence"
+        data-title="ai-powered research assistant"
+        data-description="an ai system designed to help researchers conduct efficient literature reviews and synthesize scientific knowledge."
+      >
+        <div class="card-body">
+          <h2 class="card-title text-xl font-bold flex items-center gap-3 flex-wrap">
+            AI-Powered Research Assistant
+            
+           <div class="badge badge-primary">current</div>
+            
+         
+          </h2>
+
+          <div class="mb-1">
+            
+              <p class="text-sm flex items-center gap-1"><i class="far fa-calendar-alt"></i> 2023 - Present</p>
+            
+            
+              <p class="text-md flex items-center gap-1"><i class="fas fa-tag"></i> Artificial Intelligence</p>
+            
+            
+              <div class="flex flex-wrap gap-2 mt-1">
+                
+                  <div class="badge badge-outline text-xs">AI</div>
+                
+                  <div class="badge badge-outline text-xs">Knowledge Graph</div>
+                
+                  <div class="badge badge-outline text-xs">Literature Mining</div>
+                
+                  <div class="badge badge-outline text-xs">Research Tools</div>
+                
+              </div>
+            
+          </div>
+
+          
+            <p class="text-base-content opacity-90 mb-4">An AI system designed to help researchers conduct efficient literature reviews and synthesize scientific knowledge.</p>
+          
+
+          
+          
+            <div class="mb-4 text-sm flex-wrap">
+              <span class="font-semibold">Collaborators: </span>
+              
+                <a 
+                  href="https://university.edu/alice-smith" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="link link-info no-underline"
+                >
+                  Dr. Alice Smith (PI)
+                </a>, 
+              
+                <a 
+                  href="https://university.edu/john-doe" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="link link-info no-underline"
+                >
+                  Dr. John Doe (Co-PI)
+                </a>, 
+              
+                <a 
+                  href="https://university.edu/emily-zhang" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="link link-info no-underline"
+                >
+                  Emily Zhang (PhD Student)
+                </a>
+              
+            </div>
+          
+          
+
+          
+            <div class="flex flex-wrap gap-2 max-w-full flex-wrap">
+              
+                <a 
+                  href="https://www.nature.com/articles/ai-research-synthesis" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="px-3 py-2 rounded-md text-sm max-w-sm break-words whitespace-normal text-left hover:bg-base-200 transition"
+                >
+                  <i class="fas fa-file-alt mr-1"></i> Smith et al. (2024), AI-Driven Research Synthesis, Nature
+                </a>
+              
+            </div>
+          
+
+
+
+          
+        </div>
       </div>
-    </div>
+    
+      <div 
+        class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 timeline-item"
+        data-status="completed"
+        data-category="Bioinformatics"
+        data-title="bioinformatics data platform"
+        data-description="a platform for integration and analysis of multi-omics data with user-friendly visualization."
+      >
+        <div class="card-body">
+          <h2 class="card-title text-xl font-bold flex items-center gap-3 flex-wrap">
+            Bioinformatics Data Platform
+            
+           <div class="badge badge-secondary">completed</div>
+            
+         
+          </h2>
+
+          <div class="mb-1">
+            
+              <p class="text-sm flex items-center gap-1"><i class="far fa-calendar-alt"></i> 2021 - 2023</p>
+            
+            
+              <p class="text-md flex items-center gap-1"><i class="fas fa-tag"></i> Bioinformatics</p>
+            
+            
+              <div class="flex flex-wrap gap-2 mt-1">
+                
+                  <div class="badge badge-outline text-xs">Bioinformatics</div>
+                
+                  <div class="badge badge-outline text-xs">Data Integration</div>
+                
+                  <div class="badge badge-outline text-xs">Visualization</div>
+                
+              </div>
+            
+          </div>
+
+          
+            <p class="text-base-content opacity-90 mb-4">A platform for integration and analysis of multi-omics data with user-friendly visualization.</p>
+          
+
+          
+          
+            <div class="mb-4 text-sm flex-wrap">
+              <span class="font-semibold">Collaborators: </span>
+              
+                <a 
+                  href="https://university.edu/linda-wang" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="link link-info no-underline"
+                >
+                  Dr. Linda Wang (PI)
+                </a>, 
+              
+                <a 
+                  href="https://university.edu/mark-lee" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="link link-info no-underline"
+                >
+                  Mark Lee (Researcher)
+                </a>
+              
+            </div>
+          
+          
+
+          
+            <div class="flex flex-wrap gap-2 max-w-full flex-wrap">
+              
+                <a 
+                  href="https://bioinformaticsjournal.org/articles/integrative-omics" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="px-3 py-2 rounded-md text-sm max-w-sm break-words whitespace-normal text-left hover:bg-base-200 transition"
+                >
+                  <i class="fas fa-file-alt mr-1"></i> Wang et al. (2023), Integrative Omics Analysis, Bioinformatics Journal
+                </a>
+              
+            </div>
+          
+
+
+
+          
+        </div>
+      </div>
+    
+      <div 
+        class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 timeline-item"
+        data-status="current"
+        data-category="Genomics"
+        data-title="next-gen sequencing analysis pipeline"
+        data-description="an automated pipeline for ngs data processing and variant calling optimized for large datasets."
+      >
+        <div class="card-body">
+          <h2 class="card-title text-xl font-bold flex items-center gap-3 flex-wrap">
+            Next-Gen Sequencing Analysis Pipeline
+            
+           <div class="badge badge-primary">current</div>
+            
+         
+          </h2>
+
+          <div class="mb-1">
+            
+              <p class="text-sm flex items-center gap-1"><i class="far fa-calendar-alt"></i> 2022 - Present</p>
+            
+            
+              <p class="text-md flex items-center gap-1"><i class="fas fa-tag"></i> Genomics</p>
+            
+            
+              <div class="flex flex-wrap gap-2 mt-1">
+                
+                  <div class="badge badge-outline text-xs">Genomics</div>
+                
+                  <div class="badge badge-outline text-xs">NGS</div>
+                
+                  <div class="badge badge-outline text-xs">Pipeline</div>
+                
+              </div>
+            
+          </div>
+
+          
+            <p class="text-base-content opacity-90 mb-4">An automated pipeline for NGS data processing and variant calling optimized for large datasets.</p>
+          
+
+          
+          
+            <div class="mb-4 text-sm flex-wrap">
+              <span class="font-semibold">Collaborators: </span>
+              
+                <a 
+                  href="https://university.edu/sarah-chen" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="link link-info no-underline"
+                >
+                  Dr. Sarah Chen (Lead Scientist)
+                </a>
+              
+            </div>
+          
+          
+
+          
+            <div class="flex flex-wrap gap-2 max-w-full flex-wrap">
+              
+                <a 
+                  href="https://genomeresearch.org/articles/efficient-ngs" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="px-3 py-2 rounded-md text-sm max-w-sm break-words whitespace-normal text-left hover:bg-base-200 transition"
+                >
+                  <i class="fas fa-file-alt mr-1"></i> Chen et al. (2024), Efficient NGS Data Analysis, Genome Research
+                </a>
+              
+            </div>
+          
+
+
+
+          
+        </div>
+      </div>
+    
+      <div 
+        class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 timeline-item"
+        data-status="completed"
+        data-category="Structural Biology"
+        data-title="protein structure prediction tool"
+        data-description="a computational tool for predicting protein 3d structures using deep learning methods."
+      >
+        <div class="card-body">
+          <h2 class="card-title text-xl font-bold flex items-center gap-3 flex-wrap">
+            Protein Structure Prediction Tool
+            
+           <div class="badge badge-secondary">completed</div>
+            
+         
+          </h2>
+
+          <div class="mb-1">
+            
+              <p class="text-sm flex items-center gap-1"><i class="far fa-calendar-alt"></i> 2020 - 2022</p>
+            
+            
+              <p class="text-md flex items-center gap-1"><i class="fas fa-tag"></i> Structural Biology</p>
+            
+            
+              <div class="flex flex-wrap gap-2 mt-1">
+                
+                  <div class="badge badge-outline text-xs">Protein</div>
+                
+                  <div class="badge badge-outline text-xs">Deep Learning</div>
+                
+                  <div class="badge badge-outline text-xs">Structural Biology</div>
+                
+              </div>
+            
+          </div>
+
+          
+            <p class="text-base-content opacity-90 mb-4">A computational tool for predicting protein 3D structures using deep learning methods.</p>
+          
+
+          
+          
+            <div class="mb-4 text-sm flex-wrap">
+              <span class="font-semibold">Collaborators: </span>
+              
+                <a 
+                  href="https://university.edu/kevin-brown" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="link link-info no-underline"
+                >
+                  Dr. Kevin Brown (PI)
+                </a>
+              
+            </div>
+          
+          
+
+          
+            <div class="flex flex-wrap gap-2 max-w-full flex-wrap">
+              
+                <a 
+                  href="https://jmb.org/articles/deep-learning-protein" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  class="px-3 py-2 rounded-md text-sm max-w-sm break-words whitespace-normal text-left hover:bg-base-200 transition"
+                >
+                  <i class="fas fa-file-alt mr-1"></i> Brown et al. (2022), Deep Learning for Protein Folding, Journal of Molecular Biology
+                </a>
+              
+            </div>
+          
+
+
+
+          
+        </div>
+      </div>
+    
   </div>
 </div>
 
-<!-- Featured Publications -->
-<div class="container mx-auto px-4 py-8">
-  <h2 class="text-3xl font-bold mb-8 text-base-content">Featured Publications</h2>
+<script>
+  const statusFilter = document.getElementById('statusFilter');
+  const categoryFilter = document.getElementById('categoryFilter');
+  const searchInput = document.getElementById('searchInput');
+  const projectsList = document.getElementById('projectsList');
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    
-      <div class="card glass rounded-box shadow-md bg-base-100 text-base-content hover:shadow-lg transition-all duration-300">
-        <div class="card-body p-4">
-          <!-- Title + Type -->
-          <h3 class="card-title text-lg font-semibold flex items-center gap-2">
-            <span class="title">AI-Driven Literature Synthesis</span>
-            
-              <div class="badge badge-primary text-xs">Journal</div>
-            
-          </h3>
+  function filterProjects() {
+    const status = statusFilter.value;
+    const category = categoryFilter.value;
+    const search = searchInput.value.toLowerCase();
 
-          <!-- Authors / Venue / Year -->
-          <div class="opacity-80 text-sm mt-1">
-            
-              <p class="authors font-medium">Smith A., Zhang E., Doe J.</p>
-            
-            
-              <p class="italic text-sm mt-0.5">Nature Machine Intelligence</p>
-            
-            
-              <p class="text-xs text-gray-500">2024</p>
-            
-          </div>
+    const items = projectsList.getElementsByClassName('timeline-item');
+    Array.from(items).forEach(item => {
+      const itemStatus = item.dataset.status;
+      const itemCategory = item.dataset.category;
+      const itemTitle = item.dataset.title;
+      const itemDescription = item.dataset.description;
 
-          <!-- Buttons -->
-          <div class="card-actions justify-end mt-3 gap-2">
-            
-              <a href="https://doi.org/10.1016/j.molp.2017.12.003" class="btn btn-primary btn-xs" target="_blank" rel="noopener noreferrer">
-                <i class="ai ai-doi mr-1"></i>DOI
-              </a>
-            
-            
-              <a href="https://example.com/papers/ai-synthesis.pdf" class="btn btn-primary btn-xs" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-file-pdf mr-1"></i>PDF
-              </a>
-            
-          </div>
-        </div>
-      </div>
-    
-      <div class="card glass rounded-box shadow-md bg-base-100 text-base-content hover:shadow-lg transition-all duration-300">
-        <div class="card-body p-4">
-          <!-- Title + Type -->
-          <h3 class="card-title text-lg font-semibold flex items-center gap-2">
-            <span class="title">Deep Learning for Pathology Image Segmentation</span>
-            
-              <div class="badge badge-primary text-xs">Conference</div>
-            
-          </h3>
+      const statusMatch = !status || itemStatus === status;
+      const categoryMatch = !category || itemCategory === category;
+      const searchMatch = !search || 
+        itemTitle.includes(search) || 
+        itemDescription.includes(search);
 
-          <!-- Authors / Venue / Year -->
-          <div class="opacity-80 text-sm mt-1">
-            
-              <p class="authors font-medium">Lee B., Park S., Vega C.</p>
-            
-            
-              <p class="italic text-sm mt-0.5">CVPR</p>
-            
-            
-              <p class="text-xs text-gray-500">2023</p>
-            
-          </div>
+      item.style.display = statusMatch && categoryMatch && searchMatch ? 'block' : 'none';
+    });
+  }
 
-          <!-- Buttons -->
-          <div class="card-actions justify-end mt-3 gap-2">
-            
-              <a href="https://doi.org/10.1001/jama.2016.9797" class="btn btn-primary btn-xs" target="_blank" rel="noopener noreferrer">
-                <i class="ai ai-doi mr-1"></i>DOI
-              </a>
-            
-            
-              <a href="https://example.com/papers/pathology-segmentation.pdf" class="btn btn-primary btn-xs" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-file-pdf mr-1"></i>PDF
-              </a>
-            
-          </div>
-        </div>
-      </div>
-    
-  </div>
-
-  <!-- View All -->
-  <div class="text-center mt-8">
-    <a href="/publications" class="btn btn-primary">View All Publications</a>
-  </div>
-</div>
-
-
-
-<!-- Featured Projects -->
-<div class="container mx-auto px-4 py-8">
-  <h2 class="text-3xl font-bold mb-8 text-base-content">Featured Projects</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    
-      <div class="card glass rounded-box shadow-md bg-base-100 text-base-content hover:shadow-lg transition-all duration-300">
-        <div class="card-body p-4">
-          <h3 class="card-title text-lg font-semibold flex items-center gap-2">
-            <span class="title">AI-Powered Research Assistant</span>
-            
-              <div class="badge badge-primary text-xs">current</div>
-            
-          </h3>
-          <div class="opacity-80 text-sm mt-1">
-            
-              <p class="flex items-center text-sm mb-1">
-                <i class="far fa-calendar-alt mr-2"></i>2023 - Present
-              </p>
-            
-            
-          </div>
-          
-            <p class="mt-3 text-base-content opacity-90 text-sm">An AI system designed to help researchers conduct efficient literature reviews and synthesize scientific knowledge.</p>
-          
-          <div class="card-actions justify-end mt-4 gap-2 flex-wrap">
-            
-              <a href="https://research-assistant.ai" class="btn btn-primary btn-xs" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-external-link-alt mr-1"></i>Website
-              </a>
-            
-            
-              <a href="https://github.com/username/ai-research-assistant" class="btn btn-primary btn-xs" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github mr-1"></i>Code
-              </a>
-            
-          </div>
-        </div>
-      </div>
-    
-      <div class="card glass rounded-box shadow-md bg-base-100 text-base-content hover:shadow-lg transition-all duration-300">
-        <div class="card-body p-4">
-          <h3 class="card-title text-lg font-semibold flex items-center gap-2">
-            <span class="title">Next-Gen Sequencing Analysis Pipeline</span>
-            
-              <div class="badge badge-primary text-xs">current</div>
-            
-          </h3>
-          <div class="opacity-80 text-sm mt-1">
-            
-              <p class="flex items-center text-sm mb-1">
-                <i class="far fa-calendar-alt mr-2"></i>2022 - Present
-              </p>
-            
-            
-          </div>
-          
-            <p class="mt-3 text-base-content opacity-90 text-sm">An automated pipeline for NGS data processing and variant calling optimized for large datasets.</p>
-          
-          <div class="card-actions justify-end mt-4 gap-2 flex-wrap">
-            
-            
-              <a href="https://github.com/username/ngs-pipeline" class="btn btn-primary btn-xs" target="_blank" rel="noopener noreferrer">
-                <i class="fab fa-github mr-1"></i>Code
-              </a>
-            
-          </div>
-        </div>
-      </div>
-    
-  </div>
-  <div class="text-center mt-8">
-    <a href="/projects" class="btn btn-primary">View All Projects</a>
-  </div>
-</div>
+  statusFilter.addEventListener('change', filterProjects);
+  categoryFilter.addEventListener('change', filterProjects);
+  searchInput.addEventListener('input', filterProjects);
+</script>
 
   </div>
 
