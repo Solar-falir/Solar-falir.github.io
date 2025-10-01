@@ -431,269 +431,351 @@ var _hmt = _hmt || [];
   <!-- Content area for Desktop -->
   <div class="lg:ml-80 pt-20 px-4 py-8">
     <div class="container mx-auto px-4 py-8">
-  <h1 class="text-3xl font-bold mb-8 text-base-content">Research Projects</h1>
-
-  <!-- Filters -->
-  <div class="glass-card p-4 mb-8">
-    <div class="flex flex-wrap gap-4">
-      <!-- Status Filter -->
-      <div class="form-control">
-        <select class="select select-bordered" id="statusFilter">
-          <option value="">All Statuses</option>
-          
-        </select>
-      </div>
-
-      <!-- Category Filter -->
-      <div class="form-control">
-        <select class="select select-bordered" id="categoryFilter">
-          <option value="">All Categories</option>
-          
-        </select>
-      </div>
-
-      <!-- Search -->
-      <div class="form-control flex-1">
-        <input type="text" placeholder="Search projects..." class="input input-bordered" id="searchInput" />
-      </div>
-    </div>
-  </div>
+  <h1 class="text-3xl font-bold mb-8 text-base-content">项目经验</h1>
 
   <!-- Projects List -->
   <div id="projectsList" class="space-y-6">
     
-      <div 
-        class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 timeline-item"
-        data-status=""
-        data-category=""
-        data-title=""
-        data-description="将单体应用拆分为微服务架构，提升系统可扩展性和稳定性"
-      >
+      <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
         <div class="card-body">
-          <h2 class="card-title text-xl font-bold flex items-center gap-3 flex-wrap">
-            
-            
-         
-          </h2>
+          <h2 class="card-title text-xl font-bold">电商平台微服务架构升级</h2>
 
-          <div class="mb-1">
+          <!-- Meta Info -->
+          <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm opacity-80 mb-2">
+            
+              <span><strong>角色:</strong> 技术负责人</span>
             
             
+              <span><strong>周期:</strong> 2023.01 - 2023.12</span>
             
-              <div class="flex flex-wrap gap-2 mt-1">
-                
-                  <div class="badge badge-outline text-xs">Spring Cloud</div>
-                
-                  <div class="badge badge-outline text-xs">Nacos</div>
-                
-                  <div class="badge badge-outline text-xs">Gateway</div>
-                
-                  <div class="badge badge-outline text-xs">Feign</div>
-                
-                  <div class="badge badge-outline text-xs">Seata</div>
-                
-              </div>
+            
+              <span><strong>团队:</strong> 5人开发团队</span>
             
           </div>
 
+          <!-- Tags -->
+          
+            <div class="flex flex-wrap gap-2 mb-4">
+              
+                <div class="badge badge-primary badge-outline">Spring Cloud</div>
+              
+                <div class="badge badge-primary badge-outline">Nacos</div>
+              
+                <div class="badge badge-primary badge-outline">Gateway</div>
+              
+                <div class="badge badge-primary badge-outline">Feign</div>
+              
+                <div class="badge badge-primary badge-outline">Seata</div>
+              
+            </div>
+          
+
+          <!-- Description -->
           
             <p class="text-base-content opacity-90 mb-4">将单体应用拆分为微服务架构，提升系统可扩展性和稳定性</p>
           
 
+          <!-- Highlights -->
           
-          
+            <div class="mb-4">
+              <h3 class="font-semibold mb-2">核心亮点:</h3>
+              <ul class="list-disc list-inside space-y-1 text-sm opacity-90">
+                
+                  <li>设计并实施微服务拆分方案，将系统拆分为12个独立服务</li>
+                
+                  <li>引入服务网格，实现服务间的负载均衡和熔断降级</li>
+                
+                  <li>建立统一配置中心和服务注册发现机制</li>
+                
+                  <li>系统吞吐量提升300%，响应时间降低40%</li>
+                
+              </ul>
+            </div>
           
 
+          <!-- Tech Details -->
           
+            <div class="mb-4">
+              <h3 class="font-semibold mb-2">技术细节:</h3>
+              <div class="prose prose-sm max-w-none bg-base-200 p-4 rounded-md text-base-content">
+                <p><strong>技术架构</strong>:</p>
+<ul>
+<li>服务网关: Spring Cloud Gateway</li>
+<li>服务注册: Nacos</li>
+<li>服务调用: OpenFeign + Ribbon</li>
+<li>分布式事务: Seata</li>
+<li>消息队列: RocketMQ</li>
+<li>数据库: MySQL 8.0 (分库分表)</li>
+<li>缓存: Redis Cluster</li>
+</ul>
+<p><strong>主要工作内容</strong>:</p>
+<ol>
+<li>业务域划分和服务拆分设计</li>
+<li>数据库拆分和分布式事务处理</li>
+<li>API网关设计和统一鉴权</li>
+<li>服务监控和链路追踪系统搭建</li>
+</ol>
 
-
-
-          
-        </div>
-      </div>
-    
-      <div 
-        class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 timeline-item"
-        data-status=""
-        data-category=""
-        data-title=""
-        data-description="基于ai的智能客服系统，支持自然语言处理和智能问答"
-      >
-        <div class="card-body">
-          <h2 class="card-title text-xl font-bold flex items-center gap-3 flex-wrap">
-            
-            
-         
-          </h2>
-
-          <div class="mb-1">
-            
-            
-            
-              <div class="flex flex-wrap gap-2 mt-1">
-                
-                  <div class="badge badge-outline text-xs">Spring Boot</div>
-                
-                  <div class="badge badge-outline text-xs">Python</div>
-                
-                  <div class="badge badge-outline text-xs">NLP</div>
-                
-                  <div class="badge badge-outline text-xs">WebSocket</div>
-                
-                  <div class="badge badge-outline text-xs">Elasticsearch</div>
-                
               </div>
+            </div>
+          
+
+          <!-- Links -->
+          <div class="card-actions justify-end">
+            
             
           </div>
 
+        </div>
+      </div>
+    
+      <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+        <div class="card-body">
+          <h2 class="card-title text-xl font-bold">智能客服系统</h2>
+
+          <!-- Meta Info -->
+          <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm opacity-80 mb-2">
+            
+              <span><strong>角色:</strong> 后端开发工程师</span>
+            
+            
+              <span><strong>周期:</strong> 2022.06 - 2022.12</span>
+            
+            
+              <span><strong>团队:</strong> 8人跨职能团队</span>
+            
+          </div>
+
+          <!-- Tags -->
+          
+            <div class="flex flex-wrap gap-2 mb-4">
+              
+                <div class="badge badge-primary badge-outline">Spring Boot</div>
+              
+                <div class="badge badge-primary badge-outline">Python</div>
+              
+                <div class="badge badge-primary badge-outline">NLP</div>
+              
+                <div class="badge badge-primary badge-outline">WebSocket</div>
+              
+                <div class="badge badge-primary badge-outline">Elasticsearch</div>
+              
+            </div>
+          
+
+          <!-- Description -->
           
             <p class="text-base-content opacity-90 mb-4">基于AI的智能客服系统，支持自然语言处理和智能问答</p>
           
 
+          <!-- Highlights -->
           
-          
+            <div class="mb-4">
+              <h3 class="font-semibold mb-2">核心亮点:</h3>
+              <ul class="list-disc list-inside space-y-1 text-sm opacity-90">
+                
+                  <li>开发WebSocket实时通信服务，支持万级并发连接</li>
+                
+                  <li>设计知识库索引系统，检索响应时间&lt;100ms</li>
+                
+                  <li>实现对话流程引擎，支持多轮对话和上下文管理</li>
+                
+                  <li>系统上线后人工客服工作量降低50%</li>
+                
+              </ul>
+            </div>
           
 
+          <!-- Tech Details -->
           
+            <div class="mb-4">
+              <h3 class="font-semibold mb-2">技术细节:</h3>
+              <div class="prose prose-sm max-w-none bg-base-200 p-4 rounded-md text-base-content">
+                <p><strong>核心功能</strong>:</p>
+<ul>
+<li>实时在线客服对话</li>
+<li>智能问答和知识库检索</li>
+<li>对话历史记录和分析</li>
+<li>工单系统集成</li>
+</ul>
+<p><strong>技术实现</strong>:</p>
+<ul>
+<li>后端: Spring Boot + WebSocket</li>
+<li>搜索: Elasticsearch</li>
+<li>算法: Python + FastAPI</li>
+<li>前端: Vue.js + Element Plus</li>
+</ul>
 
-
-
-          
-        </div>
-      </div>
-    
-      <div 
-        class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 timeline-item"
-        data-status=""
-        data-category=""
-        data-title=""
-        data-description="企业经营数据实时可视化监控大屏"
-      >
-        <div class="card-body">
-          <h2 class="card-title text-xl font-bold flex items-center gap-3 flex-wrap">
-            
-            
-         
-          </h2>
-
-          <div class="mb-1">
-            
-            
-            
-              <div class="flex flex-wrap gap-2 mt-1">
-                
-                  <div class="badge badge-outline text-xs">Vue3</div>
-                
-                  <div class="badge badge-outline text-xs">ECharts</div>
-                
-                  <div class="badge badge-outline text-xs">WebSocket</div>
-                
-                  <div class="badge badge-outline text-xs">Spring Boot</div>
-                
               </div>
+            </div>
+          
+
+          <!-- Links -->
+          <div class="card-actions justify-end">
+            
             
           </div>
 
+        </div>
+      </div>
+    
+      <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+        <div class="card-body">
+          <h2 class="card-title text-xl font-bold">数据可视化大屏</h2>
+
+          <!-- Meta Info -->
+          <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm opacity-80 mb-2">
+            
+              <span><strong>角色:</strong> 全栈开发</span>
+            
+            
+              <span><strong>周期:</strong> 2021.09 - 2021.12</span>
+            
+            
+              <span><strong>团队:</strong> 独立开发</span>
+            
+          </div>
+
+          <!-- Tags -->
+          
+            <div class="flex flex-wrap gap-2 mb-4">
+              
+                <div class="badge badge-primary badge-outline">Vue3</div>
+              
+                <div class="badge badge-primary badge-outline">ECharts</div>
+              
+                <div class="badge badge-primary badge-outline">WebSocket</div>
+              
+                <div class="badge badge-primary badge-outline">Spring Boot</div>
+              
+            </div>
+          
+
+          <!-- Description -->
           
             <p class="text-base-content opacity-90 mb-4">企业经营数据实时可视化监控大屏</p>
           
 
+          <!-- Highlights -->
           
-          
+            <div class="mb-4">
+              <h3 class="font-semibold mb-2">核心亮点:</h3>
+              <ul class="list-disc list-inside space-y-1 text-sm opacity-90">
+                
+                  <li>开发实时数据推送服务，数据刷新延迟&lt;500ms</li>
+                
+                  <li>设计20+可视化图表组件，支持自定义配置</li>
+                
+                  <li>实现大屏自适应布局，兼容4K分辨率</li>
+                
+                  <li>项目获得公司年度创新奖</li>
+                
+              </ul>
+            </div>
           
 
+          <!-- Tech Details -->
           
+            <div class="mb-4">
+              <h3 class="font-semibold mb-2">技术细节:</h3>
+              <div class="prose prose-sm max-w-none bg-base-200 p-4 rounded-md text-base-content">
+                <p><strong>技术栈</strong>:</p>
+<ul>
+<li>前端: Vue3 + TypeScript + ECharts</li>
+<li>后端: Spring Boot + WebSocket</li>
+<li>数据库: MySQL + Redis</li>
+</ul>
+<p><strong>核心亮点</strong>:</p>
+<ul>
+<li>组件化设计，支持拖拽配置</li>
+<li>WebSocket实时数据推送</li>
+<li>大屏自适应和响应式布局</li>
+</ul>
 
-
-
-          
-        </div>
-      </div>
-    
-      <div 
-        class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 timeline-item"
-        data-status=""
-        data-category=""
-        data-title=""
-        data-description="基于rbac的企业级权限管理中台"
-      >
-        <div class="card-body">
-          <h2 class="card-title text-xl font-bold flex items-center gap-3 flex-wrap">
-            
-            
-         
-          </h2>
-
-          <div class="mb-1">
-            
-            
-            
-              <div class="flex flex-wrap gap-2 mt-1">
-                
-                  <div class="badge badge-outline text-xs">Spring Security</div>
-                
-                  <div class="badge badge-outline text-xs">JWT</div>
-                
-                  <div class="badge badge-outline text-xs">MySQL</div>
-                
-                  <div class="badge badge-outline text-xs">Redis</div>
-                
               </div>
+            </div>
+          
+
+          <!-- Links -->
+          <div class="card-actions justify-end">
+            
             
           </div>
 
+        </div>
+      </div>
+    
+      <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+        <div class="card-body">
+          <h2 class="card-title text-xl font-bold">企业权限管理系统</h2>
+
+          <!-- Meta Info -->
+          <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm opacity-80 mb-2">
+            
+              <span><strong>角色:</strong> 核心开发</span>
+            
+            
+              <span><strong>周期:</strong> 2020.10 - 2021.05</span>
+            
+            
+              <span><strong>团队:</strong> 3人</span>
+            
+          </div>
+
+          <!-- Tags -->
+          
+            <div class="flex flex-wrap gap-2 mb-4">
+              
+                <div class="badge badge-primary badge-outline">Spring Security</div>
+              
+                <div class="badge badge-primary badge-outline">JWT</div>
+              
+                <div class="badge badge-primary badge-outline">MySQL</div>
+              
+                <div class="badge badge-primary badge-outline">Redis</div>
+              
+            </div>
+          
+
+          <!-- Description -->
           
             <p class="text-base-content opacity-90 mb-4">基于RBAC的企业级权限管理中台</p>
           
 
+          <!-- Highlights -->
           
-          
+            <div class="mb-4">
+              <h3 class="font-semibold mb-2">核心亮点:</h3>
+              <ul class="list-disc list-inside space-y-1 text-sm opacity-90">
+                
+                  <li>设计RBAC权限模型，支持角色、用户、资源的灵活配置</li>
+                
+                  <li>实现基于JWT的无状态认证方案</li>
+                
+                  <li>开发权限校验注解，简化业务代码</li>
+                
+                  <li>系统服务于公司10+内部系统</li>
+                
+              </ul>
+            </div>
           
 
+          <!-- Tech Details -->
           
 
+          <!-- Links -->
+          <div class="card-actions justify-end">
+            
+            
+              <a href="https://github.com/zhangsan/rbac-system" target="_blank" class="btn btn-ghost btn-sm">GitHub</a>
+            
+          </div>
 
-
-          
         </div>
       </div>
     
   </div>
 </div>
-
-<script>
-  const statusFilter = document.getElementById('statusFilter');
-  const categoryFilter = document.getElementById('categoryFilter');
-  const searchInput = document.getElementById('searchInput');
-  const projectsList = document.getElementById('projectsList');
-
-  function filterProjects() {
-    const status = statusFilter.value;
-    const category = categoryFilter.value;
-    const search = searchInput.value.toLowerCase();
-
-    const items = projectsList.getElementsByClassName('timeline-item');
-    Array.from(items).forEach(item => {
-      const itemStatus = item.dataset.status;
-      const itemCategory = item.dataset.category;
-      const itemTitle = item.dataset.title;
-      const itemDescription = item.dataset.description;
-
-      const statusMatch = !status || itemStatus === status;
-      const categoryMatch = !category || itemCategory === category;
-      const searchMatch = !search || 
-        itemTitle.includes(search) || 
-        itemDescription.includes(search);
-
-      item.style.display = statusMatch && categoryMatch && searchMatch ? 'block' : 'none';
-    });
-  }
-
-  statusFilter.addEventListener('change', filterProjects);
-  categoryFilter.addEventListener('change', filterProjects);
-  searchInput.addEventListener('input', filterProjects);
-</script>
-
   </div>
 
   <!-- Fixed top navbar for desktop -->

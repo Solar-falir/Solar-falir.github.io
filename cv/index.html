@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <!-- Meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hexo</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="张三">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+<!-- Open Graph tags -->
+<meta property="og:title" content="Hexo">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://solar-falir.github.io">
+
+<!-- Twitter Card tags -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="">
+
+<!-- Academicons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Tailwind CSS -->
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Theme Change Script -->
+<script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
+
+<!-- Altmetric Badge -->
+<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>
+
+<!-- Dimensions Badge -->
+<script async src="https://badge.dimensions.ai/badge.js" charset="utf-8"></script>
+
+<!-- Google Adsense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=your_google_adsense_id" crossorigin="anonymous"></script>
+
+<!-- Umami -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="your_umami_id"></script>
+
+<!-- Baidu Tongji -->
+ <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?your_baidu_tongji_id";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<!-- Typed -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<meta name="generator" content="Hexo 8.0.0"></head>
+<body class="min-h-screen bg-base-200">
+
+  <!-- Sidebar for Desktop -->
+  <aside class="hidden lg:flex fixed left-0 top-0 h-screen w-80 bg-base-200 z-40 flex-col">
+    <a href="/" class="block no-underline hover:bg-base-100 transition rounded-box">
+  <div class="p-4 text-center border-base-300 flex flex-col items-center cursor-pointer hidden lg:flex">
+    <div class="avatar mb-4">
+      <div class="w-24 rounded-full ring ring-primary ring-offset-base-100">
+        <img
+  src="/images/avatar.jpg"
+  alt="Profile"
+  class="transition-transform duration-500 hover:rotate-210 cursor-pointer rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 w-24"
+/>
+
+      </div>
+    </div>
+    <h2 class="text-xl font-bold text-base-content">张三</h2>
+    <p class="text-base-content opacity-80"></p>
+  </div>
+</a>
+
+
+<nav class="p-4 space-y-2 flex-grow">
+  
+</nav>
+
+
+<div class="p-4 border-t border-base-300 flex justify-center space-x-4">
+  
+  
+  
+  
+    <a href="https://github.com/zhangsan" class="text-base-content hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github text-2xl"></i>
+    </a>
+  
+  
+    <a href="https://linkedin.com/in/zhangsan" class="text-base-content hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-linkedin text-2xl"></i>
+    </a>
+  
+  
+</div>
+  </aside>
+
+  <!-- Drawer for Mobile -->
+  <div class="drawer lg:hidden">
+    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+    <div class="drawer-content flex flex-col">
+      <!-- Mobile navbar -->
+      <div class="w-full navbar bg-base-300 fixed top-0 left-0 right-0 z-40">
+        <label for="my-drawer" class="btn btn-square btn-ghost">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </label>
+        <div class="flex-1">
+          <a href="/" class="btn btn-ghost normal-case text-sm">
+          Hexo
+          </a>
+        </div>
+        <div class="flex-none">
+          
+
+<select class="select select-bordered w-full max-w-xs" data-choose-theme>
+  
+    <option 
+      value="light" 
+      selected
+    >
+      🌞 Light
+    </option>
+  
+    <option 
+      value="dark" 
+      
+    >
+      🌙 Dark
+    </option>
+  
+    <option 
+      value="cupcake" 
+      
+    >
+      🧁 Cupcake
+    </option>
+  
+    <option 
+      value="bumblebee" 
+      
+    >
+      🐝 Bumblebee
+    </option>
+  
+    <option 
+      value="emerald" 
+      
+    >
+      💚 Emerald
+    </option>
+  
+    <option 
+      value="corporate" 
+      
+    >
+      🏢 Corporate
+    </option>
+  
+    <option 
+      value="synthwave" 
+      
+    >
+      🕹️ Synthwave
+    </option>
+  
+    <option 
+      value="retro" 
+      
+    >
+      🎞️ Retro
+    </option>
+  
+    <option 
+      value="cyberpunk" 
+      
+    >
+      🤖 Cyberpunk
+    </option>
+  
+    <option 
+      value="valentine" 
+      
+    >
+      ❤️ Valentine
+    </option>
+  
+    <option 
+      value="halloween" 
+      
+    >
+      🎃 Halloween
+    </option>
+  
+    <option 
+      value="garden" 
+      
+    >
+      🌻 Garden
+    </option>
+  
+    <option 
+      value="forest" 
+      
+    >
+      🌲 Forest
+    </option>
+  
+    <option 
+      value="aqua" 
+      
+    >
+      💧 Aqua
+    </option>
+  
+    <option 
+      value="lofi" 
+      
+    >
+      🎧 Lofi
+    </option>
+  
+    <option 
+      value="pastel" 
+      
+    >
+      🎨 Pastel
+    </option>
+  
+    <option 
+      value="fantasy" 
+      
+    >
+      🧚 Fantasy
+    </option>
+  
+    <option 
+      value="wireframe" 
+      
+    >
+      🖼️ Wireframe
+    </option>
+  
+    <option 
+      value="black" 
+      
+    >
+      ⚫ Black
+    </option>
+  
+    <option 
+      value="luxury" 
+      
+    >
+      💎 Luxury
+    </option>
+  
+    <option 
+      value="dracula" 
+      
+    >
+      🧛 Dracula
+    </option>
+  
+    <option 
+      value="cmyk" 
+      
+    >
+      🎨 Cmyk
+    </option>
+  
+    <option 
+      value="autumn" 
+      
+    >
+      🍂 Autumn
+    </option>
+  
+    <option 
+      value="business" 
+      
+    >
+      💼 Business
+    </option>
+  
+    <option 
+      value="acid" 
+      
+    >
+      🧪 Acid
+    </option>
+  
+    <option 
+      value="lemonade" 
+      
+    >
+      🍋 Lemonade
+    </option>
+  
+    <option 
+      value="night" 
+      
+    >
+      🌃 Night
+    </option>
+  
+    <option 
+      value="coffee" 
+      
+    >
+      ☕ Coffee
+    </option>
+  
+    <option 
+      value="winter" 
+      
+    >
+      ❄️ Winter
+    </option>
+  
+    <option 
+      value="dim" 
+      
+    >
+      💡 Dim
+    </option>
+  
+    <option 
+      value="nord" 
+      
+    >
+      ❄️ Nord
+    </option>
+  
+    <option 
+      value="sunset" 
+      
+    >
+      🌅 Sunset
+    </option>
+  
+    <option 
+      value="caramellatte" 
+      
+    >
+      🥛 Caramellatte
+    </option>
+  
+    <option 
+      value="abyss" 
+      
+    >
+      🌌 Abyss
+    </option>
+  
+    <option 
+      value="silk" 
+      
+    >
+      🧵 Silk
+    </option>
+  
+</select>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar drawer panel for mobile -->
+    <div class="drawer-side z-60">
+      <label for="my-drawer" class="drawer-overlay"></label>
+      <aside class="w-80 bg-base-200 min-h-full">
+        <a href="/" class="block no-underline hover:bg-base-100 transition rounded-box">
+  <div class="p-4 text-center border-base-300 flex flex-col items-center cursor-pointer hidden lg:flex">
+    <div class="avatar mb-4">
+      <div class="w-24 rounded-full ring ring-primary ring-offset-base-100">
+        <img
+  src="/images/avatar.jpg"
+  alt="Profile"
+  class="transition-transform duration-500 hover:rotate-210 cursor-pointer rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 w-24"
+/>
+
+      </div>
+    </div>
+    <h2 class="text-xl font-bold text-base-content">张三</h2>
+    <p class="text-base-content opacity-80"></p>
+  </div>
+</a>
+
+
+<nav class="p-4 space-y-2 flex-grow">
+  
+</nav>
+
+
+<div class="p-4 border-t border-base-300 flex justify-center space-x-4">
+  
+  
+  
+  
+    <a href="https://github.com/zhangsan" class="text-base-content hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-github text-2xl"></i>
+    </a>
+  
+  
+    <a href="https://linkedin.com/in/zhangsan" class="text-base-content hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-linkedin text-2xl"></i>
+    </a>
+  
+  
+</div>
+      </aside>
+    </div>
+  </div>
+
+  <!-- Content area for Desktop -->
+  <div class="lg:ml-80 pt-20 px-4 py-8">
+    <div class="container mx-auto px-4">
+  <h1 class="text-4xl font-extrabold mb-8 text-base-content">完整简历</h1>
+
+  <!-- Basic Info -->
+  
+    <section class="mb-8" id="basic_info">
+      <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content">
+        <div class="card-body">
+          <h2 class="card-title text-2xl font-bold">张三</h2>
+          <p class="font-medium text-lg">高级软件工程师</p>
+          <div class="flex flex-wrap gap-4 mt-2 text-sm opacity-80">
+            <span>📍 北京</span>
+            <span>📧 <a href="mailto:zhangsan@example.com">zhangsan@example.com</a></span>
+            <span>📱 138-0000-0000</span>
+            <span>🐙 <a href="https://github.com/zhangsan" target="_blank">github.com/zhangsan</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+  <!-- Summary -->
+  
+    <section class="mb-8" id="summary">
+      <h2 class="text-2xl font-bold mb-4 text-base-content">个人评价</h2>
+      <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content">
+        <div class="card-body">
+          <div class="prose max-w-none text-base-content opacity-90">
+            <ul>
+<li>5年Java后端开发经验,熟练掌握Spring全家桶和微服务架构</li>
+<li>具备完整的项目生命周期管理经验,从需求分析到上线维护</li>
+<li>注重代码质量,熟悉设计模式和代码规范,有良好的文档编写习惯</li>
+<li>学习能力强,关注技术发展动态,保持技术热情</li>
+<li>良好的团队协作能力和沟通能力,有带团队经验</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  
+
+  <!-- Jump to section -->
+  <p class="mb-2 text-base-content font-medium">快速跳转:</p>
+  <nav class="flex flex-wrap gap-2 mb-6">
+    <a href="#education" class="btn btn-outline btn-secondary btn-sm">教育背景</a>
+    <a href="#skills" class="btn btn-outline btn-secondary btn-sm">专业技能</a>
+    <a href="#certifications" class="btn btn-outline btn-secondary btn-sm">证书认证</a>
+    <a href="#open_source" class="btn btn-outline btn-secondary btn-sm">开源贡献</a>
+  </nav>
+
+  <!-- Education -->
+  <section class="mb-8" id="education">
+    <h2 class="text-2xl font-bold mb-4 text-base-content">教育背景</h2>
+    <div class="grid gap-6">
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h2 class="card-title text-xl font-bold flex flex-wrap gap-2 items-start">
+            计算机科学与技术 学士
+            <div class="badge badge-primary badge-sm lg:badge-md whitespace-nowrap">2016.09 - 2020.06</div>
+            </h2>
+            <div class="text-base-content opacity-80">
+              <p class="font-medium">XX大学 (北京)</p>
+              <p class="mt-1">GPA: 3.7/4.0</p>
+              
+                <ul class="list-disc list-inside mt-3 opacity-90 text-sm">
+                  
+                    <li>核心课程: 数据结构、算法设计、操作系统、计算机网络、数据库系统</li>
+                  
+                    <li>奖项: 一等奖学金(2次)、优秀毕业生</li>
+                  
+                    <li>活动: ACM程序设计竞赛省赛银奖</li>
+                  
+                </ul>
+              
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="mb-8" id="skills">
+    <h2 class="text-2xl font-bold mb-4 text-base-content">专业技能</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h3 class="card-title text-xl font-bold mb-4">后端开发</h3>
+            <div class="space-y-4">
+              
+                <div>
+                  <div class="font-semibold">Java <span class="font-normal opacity-70">(精通)</span></div>
+                  <p class="text-sm opacity-80">5年开发经验，熟悉JVM原理、并发编程、性能调优</p>
+                </div>
+              
+                <div>
+                  <div class="font-semibold">Spring全家桶 <span class="font-normal opacity-70">(精通)</span></div>
+                  <p class="text-sm opacity-80">Spring Boot, Spring Cloud, Spring Security, MyBatis Plus</p>
+                </div>
+              
+                <div>
+                  <div class="font-semibold">微服务架构 <span class="font-normal opacity-70">(熟练)</span></div>
+                  <p class="text-sm opacity-80">Dubbo, Nacos, Gateway, Feign, Sentinel, Seata</p>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h3 class="card-title text-xl font-bold mb-4">前端开发</h3>
+            <div class="space-y-4">
+              
+                <div>
+                  <div class="font-semibold">Vue.js <span class="font-normal opacity-70">(熟练)</span></div>
+                  <p class="text-sm opacity-80">Vue2/3, Vuex/Pinia, Vue Router, Element Plus</p>
+                </div>
+              
+                <div>
+                  <div class="font-semibold">现代前端 <span class="font-normal opacity-70">(熟悉)</span></div>
+                  <p class="text-sm opacity-80">TypeScript, Webpack, Vite, ES6+</p>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h3 class="card-title text-xl font-bold mb-4">数据库</h3>
+            <div class="space-y-4">
+              
+                <div>
+                  <div class="font-semibold">MySQL <span class="font-normal opacity-70">(精通)</span></div>
+                  <p class="text-sm opacity-80">索引优化、SQL调优、主从复制、分库分表</p>
+                </div>
+              
+                <div>
+                  <div class="font-semibold">Redis <span class="font-normal opacity-70">(熟练)</span></div>
+                  <p class="text-sm opacity-80">缓存设计、分布式锁、消息队列</p>
+                </div>
+              
+                <div>
+                  <div class="font-semibold">其他 <span class="font-normal opacity-70">(熟悉)</span></div>
+                  <p class="text-sm opacity-80">MongoDB, Elasticsearch</p>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h3 class="card-title text-xl font-bold mb-4">DevOps</h3>
+            <div class="space-y-4">
+              
+                <div>
+                  <div class="font-semibold">容器化 <span class="font-normal opacity-70">(熟练)</span></div>
+                  <p class="text-sm opacity-80">Docker, Kubernetes, Docker Compose</p>
+                </div>
+              
+                <div>
+                  <div class="font-semibold">CI/CD <span class="font-normal opacity-70">(熟练)</span></div>
+                  <p class="text-sm opacity-80">Jenkins, GitLab CI, GitHub Actions</p>
+                </div>
+              
+                <div>
+                  <div class="font-semibold">监控 <span class="font-normal opacity-70">(熟悉)</span></div>
+                  <p class="text-sm opacity-80">Prometheus, Grafana, ELK Stack</p>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h3 class="card-title text-xl font-bold mb-4">其他技能</h3>
+            <div class="space-y-4">
+              
+                <div>
+                  <div class="font-semibold">消息队列 <span class="font-normal opacity-70">(熟练)</span></div>
+                  <p class="text-sm opacity-80">RocketMQ, Kafka, RabbitMQ</p>
+                </div>
+              
+                <div>
+                  <div class="font-semibold">版本控制 <span class="font-normal opacity-70">(精通)</span></div>
+                  <p class="text-sm opacity-80">Git, Git Flow工作流</p>
+                </div>
+              
+                <div>
+                  <div class="font-semibold">文档工具 <span class="font-normal opacity-70">(熟练)</span></div>
+                  <p class="text-sm opacity-80">Markdown, Swagger, API文档编写</p>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section class="mb-8" id="certifications">
+    <h2 class="text-2xl font-bold mb-4 text-base-content">证书认证</h2>
+    <div class="grid gap-6">
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h2 class="card-title text-xl font-bold flex flex-wrap gap-2 items-start">
+              阿里云ACP认证
+              <div class="badge badge-primary badge-sm lg:badge-md whitespace-nowrap">2023.05</div>
+            </h2>
+            <p class="font-medium text-base-content opacity-80">阿里云</p>
+            
+          </div>
+        </div>
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h2 class="card-title text-xl font-bold flex flex-wrap gap-2 items-start">
+              软件设计师(中级)
+              <div class="badge badge-primary badge-sm lg:badge-md whitespace-nowrap">2021.11</div>
+            </h2>
+            <p class="font-medium text-base-content opacity-80">工信部</p>
+            
+          </div>
+        </div>
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h2 class="card-title text-xl font-bold flex flex-wrap gap-2 items-start">
+              CET-6
+              <div class="badge badge-primary badge-sm lg:badge-md whitespace-nowrap">2019.06</div>
+            </h2>
+            <p class="font-medium text-base-content opacity-80">教育部</p>
+            
+              <p class="text-sm opacity-80">Score: 520</p>
+            
+          </div>
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- Open Source -->
+  <section class="mb-8" id="open_source">
+    <h2 class="text-2xl font-bold mb-4 text-base-content">开源贡献</h2>
+    <div class="grid gap-6">
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h2 class="card-title text-xl font-bold">Spring Boot Starter XXX <span class="font-normal text-base opacity-70">(贡献者)</span></h2>
+            <p class="mt-2 text-base-content opacity-90">为Spring Boot生态贡献starter，简化开发配置</p>
+            <div class="card-actions justify-end mt-2">
+              <a href="https://github.com/xxx" target="_blank" class="btn btn-ghost btn-sm">查看详情 &rarr;</a>
+            </div>
+          </div>
+        </div>
+      
+        <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300">
+          <div class="card-body">
+            <h2 class="card-title text-xl font-bold">个人技术博客 <span class="font-normal text-base opacity-70">(作者)</span></h2>
+            <p class="mt-2 text-base-content opacity-90">持续输出技术文章，累计阅读量10w+</p>
+            <div class="card-actions justify-end mt-2">
+              <a href="https://blog.example.com" target="_blank" class="btn btn-ghost btn-sm">查看详情 &rarr;</a>
+            </div>
+          </div>
+        </div>
+      
+    </div>
+  </section>
+
+</div>
+  </div>
+
+  <!-- Fixed top navbar for desktop -->
+  <div class="hidden lg:flex fixed top-0 left-80 right-0 z-50 bg-base-300 h-16 items-center px-4">
+    <div class="flex-1">
+      <a href="/" class="btn btn-ghost normal-case text-xl">
+      Hexo
+      </a>
+    </div>
+    <div class="flex-none">
+      
+
+<select class="select select-bordered w-full max-w-xs" data-choose-theme>
+  
+    <option 
+      value="light" 
+      selected
+    >
+      🌞 Light
+    </option>
+  
+    <option 
+      value="dark" 
+      
+    >
+      🌙 Dark
+    </option>
+  
+    <option 
+      value="cupcake" 
+      
+    >
+      🧁 Cupcake
+    </option>
+  
+    <option 
+      value="bumblebee" 
+      
+    >
+      🐝 Bumblebee
+    </option>
+  
+    <option 
+      value="emerald" 
+      
+    >
+      💚 Emerald
+    </option>
+  
+    <option 
+      value="corporate" 
+      
+    >
+      🏢 Corporate
+    </option>
+  
+    <option 
+      value="synthwave" 
+      
+    >
+      🕹️ Synthwave
+    </option>
+  
+    <option 
+      value="retro" 
+      
+    >
+      🎞️ Retro
+    </option>
+  
+    <option 
+      value="cyberpunk" 
+      
+    >
+      🤖 Cyberpunk
+    </option>
+  
+    <option 
+      value="valentine" 
+      
+    >
+      ❤️ Valentine
+    </option>
+  
+    <option 
+      value="halloween" 
+      
+    >
+      🎃 Halloween
+    </option>
+  
+    <option 
+      value="garden" 
+      
+    >
+      🌻 Garden
+    </option>
+  
+    <option 
+      value="forest" 
+      
+    >
+      🌲 Forest
+    </option>
+  
+    <option 
+      value="aqua" 
+      
+    >
+      💧 Aqua
+    </option>
+  
+    <option 
+      value="lofi" 
+      
+    >
+      🎧 Lofi
+    </option>
+  
+    <option 
+      value="pastel" 
+      
+    >
+      🎨 Pastel
+    </option>
+  
+    <option 
+      value="fantasy" 
+      
+    >
+      🧚 Fantasy
+    </option>
+  
+    <option 
+      value="wireframe" 
+      
+    >
+      🖼️ Wireframe
+    </option>
+  
+    <option 
+      value="black" 
+      
+    >
+      ⚫ Black
+    </option>
+  
+    <option 
+      value="luxury" 
+      
+    >
+      💎 Luxury
+    </option>
+  
+    <option 
+      value="dracula" 
+      
+    >
+      🧛 Dracula
+    </option>
+  
+    <option 
+      value="cmyk" 
+      
+    >
+      🎨 Cmyk
+    </option>
+  
+    <option 
+      value="autumn" 
+      
+    >
+      🍂 Autumn
+    </option>
+  
+    <option 
+      value="business" 
+      
+    >
+      💼 Business
+    </option>
+  
+    <option 
+      value="acid" 
+      
+    >
+      🧪 Acid
+    </option>
+  
+    <option 
+      value="lemonade" 
+      
+    >
+      🍋 Lemonade
+    </option>
+  
+    <option 
+      value="night" 
+      
+    >
+      🌃 Night
+    </option>
+  
+    <option 
+      value="coffee" 
+      
+    >
+      ☕ Coffee
+    </option>
+  
+    <option 
+      value="winter" 
+      
+    >
+      ❄️ Winter
+    </option>
+  
+    <option 
+      value="dim" 
+      
+    >
+      💡 Dim
+    </option>
+  
+    <option 
+      value="nord" 
+      
+    >
+      ❄️ Nord
+    </option>
+  
+    <option 
+      value="sunset" 
+      
+    >
+      🌅 Sunset
+    </option>
+  
+    <option 
+      value="caramellatte" 
+      
+    >
+      🥛 Caramellatte
+    </option>
+  
+    <option 
+      value="abyss" 
+      
+    >
+      🌌 Abyss
+    </option>
+  
+    <option 
+      value="silk" 
+      
+    >
+      🧵 Silk
+    </option>
+  
+</select>
+
+
+    </div>
+  </div>
+
+  <!-- Footer, 页面只出现一次 -->
+  <footer class="mt-auto">
+    <!-- Footer -->
+<footer class="footer footer-center p-4 bg-base-200 text-base-content">
+  <div class="grid grid-flow-col gap-4">
+    <div class="text-center">
+      <span>© 2025 张三</span>
+      <span>·</span>
+      <span>Powered by <a href="https://hexo.io/" target="_blank" rel="noopener noreferrer" class="link link-info no-underline">Hexo</a></span>
+      <span>·</span>
+      <span>Theme: <a href="https://github.com/jiehua1995/hexo-theme-researcher" target="_blank" rel="noopener noreferrer" class="link link-info no-underline">Researcher v0.1.3</a></span>
+    </div>
+  </div>
+</footer>
+
+  </footer>
+
+  <!-- back to top -->
+  <!-- 返回顶部按钮 -->
+<button id="back_to_top"
+  class="btn btn-accent fixed bottom-10 right-10 opacity-0 pointer-events-none transition-opacity duration-300 z-50 "
+  title="Back to top" aria-label="Back to top" tabindex="0">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script>
+  (function(){
+    const backToTopBtn = document.getElementById('back_to_top');
+
+    // 更新按钮颜色由daisyUI的btn自动管理，无需额外代码
+
+    function toggleVisibility() {
+      if(window.scrollY > 100) {
+        backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+        backToTopBtn.classList.add('opacity-100', 'pointer-events-auto');
+      } else {
+        backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto');
+        backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+      }
+    }
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    backToTopBtn.addEventListener('keypress', (e) => {
+      if(e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        backToTopBtn.click();
+      }
+    });
+
+    window.addEventListener('scroll', toggleVisibility);
+
+    // 页面加载时判断一下
+    toggleVisibility();
+  })();
+</script>
+
+
+</body>
+</html>
