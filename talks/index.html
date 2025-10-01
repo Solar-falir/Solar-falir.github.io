@@ -477,7 +477,7 @@ var _hmt = _hmt || [];
   <!-- Content area for Desktop -->
   <div class="lg:ml-80 pt-20 px-4 py-8">
     <div class="container mx-auto px-4 py-8">
-  <h1 class="text-4xl font-bold mb-8">Academic Talks & Presentations</h1>
+  <h1 class="text-4xl font-bold mb-8">Certifications & Training</h1>
 
   <!-- Filters -->
   <div class="glass-card p-4 mb-8">
@@ -485,15 +485,15 @@ var _hmt = _hmt || [];
       <!-- Type Filter -->
       <div class="form-control w-48">
         <select class="select select-bordered" id="typeFilter" name="typeFilter">
-          <option value="">All Types</option>
+          <option value="">所有类型</option>
           
-            <option value="conference">Conference</option>
+            <option value="national">国家资格</option>
           
-            <option value="invited">Invited</option>
+            <option value="online">在线课程</option>
           
-            <option value="seminar">Seminar</option>
+            <option value="professional">专业认证</option>
           
-            <option value="workshop">Workshop</option>
+            <option value="training">培训证书</option>
           
         </select>
       </div>
@@ -501,7 +501,9 @@ var _hmt = _hmt || [];
       <!-- Year Filter -->
       <div class="form-control w-40">
         <select class="select select-bordered" id="yearFilter" name="yearFilter">
-          <option value="">All Years</option>
+          <option value="">所有年份</option>
+          
+            <option value="2024">2024</option>
           
             <option value="2023">2023</option>
           
@@ -512,134 +514,343 @@ var _hmt = _hmt || [];
 
       <!-- Search -->
       <div class="form-control flex-grow min-w-[200px]">
-        <input type="text" placeholder="Search talks..." class="input input-bordered" id="searchInput" />
+        <input type="text" placeholder="搜索证书..." class="input input-bordered" id="searchInput" />
       </div>
     </div>
   </div>
 
-  <!-- Talks List -->
-  <div class="grid gap-6" id="talksList">
+  <!-- Certificates Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="certificatesList">
     
-      <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 p-4 talk-item"
-           data-type="conference"
-           data-year="2023">
-        <h2 class="card-title text-lg font-semibold mb-1">Recent Advances in Machine Learning</h2>
-        <p class="opacity-80 mb-2">International Conference on Machine Learning (ICML) — July 15, 2023, Honolulu, Hawaii</p>
+      <div class="card glass rounded-box shadow-lg bg-base-100 hover:shadow-2xl transition-all duration-300 overflow-hidden certificate-item cursor-pointer"
+           data-type="professional"
+           data-year="2023"
+           onclick="openModal('Oracle OCP 数据库管理专家认证', '/images/certificates/oracle-ocp.jpg', 'Oracle Certified Professional - Database Administrator 认证，具备Oracle数据库管理、性能调优、备份恢复等专业技能', 'Oracle Corporation', '2023-06', 'OC12345678', '')">
 
-        
-          <p class="mb-3">Keynote presentation on recent developments in machine learning algorithms and their applications.</p>
-        
+        <!-- Certificate Image -->
+        <figure class="relative aspect-[4/3] bg-base-200 overflow-hidden">
+          
+            <img src="/images/certificates/oracle-ocp.jpg" alt="Oracle OCP 数据库管理专家认证"
+                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                 onerror="this.onerror=null; this.src='/images/placeholder-cert.jpg';" />
+          
 
-        <div class="flex flex-wrap gap-2">
-          
-            <a href="/slides/icml_2023.pdf" target="_blank" rel="noopener noreferrer" class="link link-primary underline">Slides</a>
-          
-          
-            <a href="https://www.youtube.com/watch?v=example1" target="_blank" rel="noopener noreferrer" class="link link-primary underline">Video</a>
-          
+          <!-- Type Badge -->
+          <div class="absolute top-2 right-2">
+            <span class="badge badge-primary badge-sm">professional</span>
+          </div>
+        </figure>
+
+        <!-- Certificate Info -->
+        <div class="card-body p-4">
+          <h2 class="card-title text-base font-semibold line-clamp-2">Oracle OCP 数据库管理专家认证</h2>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-building mr-1"></i>Oracle Corporation
+          </p>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-calendar mr-1"></i>2023-06
+          </p>
+
           
         </div>
       </div>
     
-      <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 p-4 talk-item"
-           data-type="seminar"
-           data-year="2023">
-        <h2 class="card-title text-lg font-semibold mb-1">Deep Learning for Medical Imaging</h2>
-        <p class="opacity-80 mb-2">Department of Computer Science, Stanford University — March 10, 2023, Stanford, California</p>
+      <div class="card glass rounded-box shadow-lg bg-base-100 hover:shadow-2xl transition-all duration-300 overflow-hidden certificate-item cursor-pointer"
+           data-type="professional"
+           data-year="2024"
+           onclick="openModal('华为 HCIA-Big Data 大数据工程师认证', '/images/certificates/huawei-hcia.jpg', '华为认证大数据工程师，掌握Hadoop、Spark、Hive等大数据技术栈及应用场景', 'Huawei Technologies', '2024-03', 'HCIA202403001', '')">
 
-        
-          <p class="mb-3">Seminar on applying deep learning techniques to medical image analysis.</p>
-        
+        <!-- Certificate Image -->
+        <figure class="relative aspect-[4/3] bg-base-200 overflow-hidden">
+          
+            <img src="/images/certificates/huawei-hcia.jpg" alt="华为 HCIA-Big Data 大数据工程师认证"
+                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                 onerror="this.onerror=null; this.src='/images/placeholder-cert.jpg';" />
+          
 
-        <div class="flex flex-wrap gap-2">
-          
-            <a href="/slides/stanford_2023.pdf" target="_blank" rel="noopener noreferrer" class="link link-primary underline">Slides</a>
-          
-          
+          <!-- Type Badge -->
+          <div class="absolute top-2 right-2">
+            <span class="badge badge-primary badge-sm">professional</span>
+          </div>
+        </figure>
+
+        <!-- Certificate Info -->
+        <div class="card-body p-4">
+          <h2 class="card-title text-base font-semibold line-clamp-2">华为 HCIA-Big Data 大数据工程师认证</h2>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-building mr-1"></i>Huawei Technologies
+          </p>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-calendar mr-1"></i>2024-03
+          </p>
+
           
         </div>
       </div>
     
-      <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 p-4 talk-item"
-           data-type="workshop"
-           data-year="2022">
-        <h2 class="card-title text-lg font-semibold mb-1">Natural Language Processing Workshop</h2>
-        <p class="opacity-80 mb-2">Annual Meeting of the Association for Computational Linguistics — July 7, 2022, Dublin, Ireland</p>
+      <div class="card glass rounded-box shadow-lg bg-base-100 hover:shadow-2xl transition-all duration-300 overflow-hidden certificate-item cursor-pointer"
+           data-type="national"
+           data-year="2022"
+           onclick="openModal('软件设计师（中级）', '/images/certificates/ruankao-designer.jpg', '国家软考中级资格认证，具备软件系统分析与设计、数据库设计、项目管理等能力', '工业和信息化部', '2022-11', '', '')">
 
-        
-          <p class="mb-3">Workshop on advanced NLP techniques and their applications.</p>
-        
+        <!-- Certificate Image -->
+        <figure class="relative aspect-[4/3] bg-base-200 overflow-hidden">
+          
+            <img src="/images/certificates/ruankao-designer.jpg" alt="软件设计师（中级）"
+                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                 onerror="this.onerror=null; this.src='/images/placeholder-cert.jpg';" />
+          
 
-        <div class="flex flex-wrap gap-2">
-          
-            <a href="/slides/acl_2022.pdf" target="_blank" rel="noopener noreferrer" class="link link-primary underline">Slides</a>
-          
-          
-            <a href="https://www.youtube.com/watch?v=example2" target="_blank" rel="noopener noreferrer" class="link link-primary underline">Video</a>
-          
+          <!-- Type Badge -->
+          <div class="absolute top-2 right-2">
+            <span class="badge badge-primary badge-sm">national</span>
+          </div>
+        </figure>
+
+        <!-- Certificate Info -->
+        <div class="card-body p-4">
+          <h2 class="card-title text-base font-semibold line-clamp-2">软件设计师（中级）</h2>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-building mr-1"></i>工业和信息化部
+          </p>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-calendar mr-1"></i>2022-11
+          </p>
+
           
         </div>
       </div>
     
-      <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content hover:shadow-xl transition-all duration-300 p-4 talk-item"
-           data-type="invited"
-           data-year="2022">
-        <h2 class="card-title text-lg font-semibold mb-1">AI in Healthcare</h2>
-        <p class="opacity-80 mb-2">Healthcare Technology Summit — November 15, 2022, Boston, Massachusetts</p>
+      <div class="card glass rounded-box shadow-lg bg-base-100 hover:shadow-2xl transition-all duration-300 overflow-hidden certificate-item cursor-pointer"
+           data-type="training"
+           data-year="2023"
+           onclick="openModal('金融科技专业培训证书', '/images/certificates/fintech-training.jpg', '完成银行业监管报送业务系统专题培训，涵盖1104报送、EAST系统、金融统计等监管制度', '中国银行业协会', '2023-09', '', '')">
 
-        
-          <p class="mb-3">Invited talk on the role of artificial intelligence in modern healthcare.</p>
-        
+        <!-- Certificate Image -->
+        <figure class="relative aspect-[4/3] bg-base-200 overflow-hidden">
+          
+            <img src="/images/certificates/fintech-training.jpg" alt="金融科技专业培训证书"
+                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                 onerror="this.onerror=null; this.src='/images/placeholder-cert.jpg';" />
+          
 
-        <div class="flex flex-wrap gap-2">
+          <!-- Type Badge -->
+          <div class="absolute top-2 right-2">
+            <span class="badge badge-primary badge-sm">training</span>
+          </div>
+        </figure>
+
+        <!-- Certificate Info -->
+        <div class="card-body p-4">
+          <h2 class="card-title text-base font-semibold line-clamp-2">金融科技专业培训证书</h2>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-building mr-1"></i>中国银行业协会
+          </p>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-calendar mr-1"></i>2023-09
+          </p>
+
           
-            <a href="/slides/healthcare_2022.pdf" target="_blank" rel="noopener noreferrer" class="link link-primary underline">Slides</a>
+        </div>
+      </div>
+    
+      <div class="card glass rounded-box shadow-lg bg-base-100 hover:shadow-2xl transition-all duration-300 overflow-hidden certificate-item cursor-pointer"
+           data-type="online"
+           data-year="2024"
+           onclick="openModal('Python 数据分析专项课程', '/images/certificates/coursera-python.jpg', '完成Python数据分析系列课程，掌握Pandas、NumPy、Matplotlib等数据处理与可视化技能', 'Coursera', '2024-01', 'COURSERA-ABC123', 'https://www.coursera.org/account/accomplishments/verify/ABC123')">
+
+        <!-- Certificate Image -->
+        <figure class="relative aspect-[4/3] bg-base-200 overflow-hidden">
           
+            <img src="/images/certificates/coursera-python.jpg" alt="Python 数据分析专项课程"
+                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                 onerror="this.onerror=null; this.src='/images/placeholder-cert.jpg';" />
           
+
+          <!-- Type Badge -->
+          <div class="absolute top-2 right-2">
+            <span class="badge badge-primary badge-sm">online</span>
+          </div>
+        </figure>
+
+        <!-- Certificate Info -->
+        <div class="card-body p-4">
+          <h2 class="card-title text-base font-semibold line-clamp-2">Python 数据分析专项课程</h2>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-building mr-1"></i>Coursera
+          </p>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-calendar mr-1"></i>2024-01
+          </p>
+
           
-            <a href="/papers/ai_healthcare_2022.pdf" target="_blank" rel="noopener noreferrer" class="link link-primary underline">Paper</a>
+            <div class="card-actions justify-end mt-2">
+              <a href="https://www.coursera.org/account/accomplishments/verify/ABC123" target="_blank" rel="noopener noreferrer"
+                 class="btn btn-xs btn-outline btn-primary" onclick="event.stopPropagation()">
+                <i class="fas fa-external-link-alt mr-1"></i>验证
+              </a>
+            </div>
+          
+        </div>
+      </div>
+    
+      <div class="card glass rounded-box shadow-lg bg-base-100 hover:shadow-2xl transition-all duration-300 overflow-hidden certificate-item cursor-pointer"
+           data-type="training"
+           data-year="2023"
+           onclick="openModal('Git 版本控制系统实战', '/images/certificates/git-training.jpg', '公司内部Git工作流培训，熟练掌握分支管理、代码审查、冲突解决等协作开发技能', '内部培训', '2023-03', '', '')">
+
+        <!-- Certificate Image -->
+        <figure class="relative aspect-[4/3] bg-base-200 overflow-hidden">
+          
+            <img src="/images/certificates/git-training.jpg" alt="Git 版本控制系统实战"
+                 class="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                 onerror="this.onerror=null; this.src='/images/placeholder-cert.jpg';" />
+          
+
+          <!-- Type Badge -->
+          <div class="absolute top-2 right-2">
+            <span class="badge badge-primary badge-sm">training</span>
+          </div>
+        </figure>
+
+        <!-- Certificate Info -->
+        <div class="card-body p-4">
+          <h2 class="card-title text-base font-semibold line-clamp-2">Git 版本控制系统实战</h2>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-building mr-1"></i>内部培训
+          </p>
+          <p class="text-sm opacity-70">
+            <i class="fas fa-calendar mr-1"></i>2023-03
+          </p>
+
           
         </div>
       </div>
     
   </div>
+
+  <!-- Empty State -->
+  <div id="emptyState" class="hidden text-center py-12">
+    <i class="fas fa-search text-6xl opacity-20 mb-4"></i>
+    <p class="text-xl opacity-60">未找到符合条件的证书</p>
+  </div>
 </div>
+
+<!-- Modal for Certificate Details -->
+<dialog id="certModal" class="modal">
+  <div class="modal-box max-w-4xl">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="font-bold text-2xl mb-4" id="modalTitle"></h3>
+    <figure class="mb-4 rounded-lg overflow-hidden bg-base-200">
+      <img id="modalImage" src="" alt="" class="w-full h-auto" />
+    </figure>
+    <div class="space-y-2">
+      <p id="modalDescription" class="text-base"></p>
+      <p class="text-sm opacity-70">
+        <i class="fas fa-building mr-2"></i><strong>颁发机构：</strong><span id="modalIssuer"></span>
+      </p>
+      <p class="text-sm opacity-70">
+        <i class="fas fa-calendar mr-2"></i><strong>获得日期：</strong><span id="modalDate"></span>
+      </p>
+      <p class="text-sm opacity-70" id="modalCredentialRow">
+        <i class="fas fa-id-card mr-2"></i><strong>证书编号：</strong><span id="modalCredentialId"></span>
+      </p>
+    </div>
+    <div class="modal-action">
+      <a id="modalVerifyLink" href="" target="_blank" rel="noopener noreferrer" class="btn btn-primary hidden">
+        <i class="fas fa-external-link-alt mr-2"></i>在线验证
+      </a>
+      <form method="dialog">
+        <button class="btn">关闭</button>
+      </form>
+    </div>
+  </div>
+  <form method="dialog" class="modal-backdrop">
+    <button>关闭</button>
+  </form>
+</dialog>
 
 <script>
   const typeFilter = document.getElementById('typeFilter');
   const yearFilter = document.getElementById('yearFilter');
   const searchInput = document.getElementById('searchInput');
-  const talks = document.querySelectorAll('.talk-item');
+  const certificates = document.querySelectorAll('.certificate-item');
+  const emptyState = document.getElementById('emptyState');
+  const certificatesList = document.getElementById('certificatesList');
 
-  function filterTalks() {
+  function filterCertificates() {
     const typeVal = typeFilter.value.toLowerCase();
     const yearVal = yearFilter.value;
     const searchVal = searchInput.value.toLowerCase();
+    let visibleCount = 0;
 
-    talks.forEach(talk => {
-      const talkType = talk.getAttribute('data-type').toLowerCase();
-      const talkYear = talk.getAttribute('data-year');
-      const title = talk.querySelector('.card-title').textContent.toLowerCase();
-      const venue = talk.querySelector('p').textContent.toLowerCase();
+    certificates.forEach(cert => {
+      const certType = cert.getAttribute('data-type').toLowerCase();
+      const certYear = cert.getAttribute('data-year');
+      const title = cert.querySelector('.card-title').textContent.toLowerCase();
+      const issuer = cert.querySelector('.text-sm').textContent.toLowerCase();
 
-      const matchesType = !typeVal || talkType === typeVal;
-      const matchesYear = !yearVal || talkYear === yearVal;
-      const matchesSearch = !searchVal || title.includes(searchVal) || venue.includes(searchVal);
+      const matchesType = !typeVal || certType === typeVal;
+      const matchesYear = !yearVal || certYear === yearVal;
+      const matchesSearch = !searchVal || title.includes(searchVal) || issuer.includes(searchVal);
 
       if (matchesType && matchesYear && matchesSearch) {
-        talk.classList.remove('hidden');
+        cert.classList.remove('hidden');
+        visibleCount++;
       } else {
-        talk.classList.add('hidden');
+        cert.classList.add('hidden');
       }
     });
+
+    // 显示/隐藏空状态
+    if (visibleCount === 0) {
+      certificatesList.classList.add('hidden');
+      emptyState.classList.remove('hidden');
+    } else {
+      certificatesList.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+    }
   }
 
-  typeFilter.addEventListener('change', filterTalks);
-  yearFilter.addEventListener('change', filterTalks);
-  searchInput.addEventListener('input', filterTalks);
+  typeFilter.addEventListener('change', filterCertificates);
+  yearFilter.addEventListener('change', filterCertificates);
+  searchInput.addEventListener('input', filterCertificates);
+
+  // 模态框函数
+  function openModal(title, image, description, issuer, date, credentialId, credentialUrl) {
+    document.getElementById('modalTitle').textContent = title;
+    document.getElementById('modalImage').src = image;
+    document.getElementById('modalImage').alt = title;
+    document.getElementById('modalDescription').textContent = description;
+    document.getElementById('modalIssuer').textContent = issuer;
+    document.getElementById('modalDate').textContent = date;
+
+    // 证书编号
+    const credentialRow = document.getElementById('modalCredentialRow');
+    const credentialIdSpan = document.getElementById('modalCredentialId');
+    if (credentialId) {
+      credentialIdSpan.textContent = credentialId;
+      credentialRow.classList.remove('hidden');
+    } else {
+      credentialRow.classList.add('hidden');
+    }
+
+    // 验证链接
+    const verifyLink = document.getElementById('modalVerifyLink');
+    if (credentialUrl) {
+      verifyLink.href = credentialUrl;
+      verifyLink.classList.remove('hidden');
+    } else {
+      verifyLink.classList.add('hidden');
+    }
+
+    document.getElementById('certModal').showModal();
+  }
 
   // 初始化显示全部
-  filterTalks();
+  filterCertificates();
 </script>
 
   </div>
