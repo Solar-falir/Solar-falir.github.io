@@ -85,6 +85,43 @@ var _hmt = _hmt || [];
 
 <nav class="p-4 space-y-2 flex-grow">
   
+    
+      <a href="/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-home mr-2"></i>
+        首页
+      </a>
+    
+      <a href="/publications/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-briefcase mr-2"></i>
+        工作经历
+      </a>
+    
+      <a href="/projects/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-project-diagram mr-2"></i>
+        项目经验
+      </a>
+    
+      <a href="/cv/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-id-card mr-2"></i>
+        完整简历
+      </a>
+    
+      <a href="/talks/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-sitemap mr-2"></i>
+        技能矩阵
+      </a>
+    
+      <a href="/archives/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-archive mr-2"></i>
+        技术博客
+      </a>
+    
+      <a href="/contact/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-envelope mr-2"></i>
+        联系我
+      </a>
+    
+  
 </nav>
 
 
@@ -405,6 +442,43 @@ var _hmt = _hmt || [];
 
 <nav class="p-4 space-y-2 flex-grow">
   
+    
+      <a href="/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-home mr-2"></i>
+        首页
+      </a>
+    
+      <a href="/publications/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-briefcase mr-2"></i>
+        工作经历
+      </a>
+    
+      <a href="/projects/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-project-diagram mr-2"></i>
+        项目经验
+      </a>
+    
+      <a href="/cv/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-id-card mr-2"></i>
+        完整简历
+      </a>
+    
+      <a href="/talks/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-sitemap mr-2"></i>
+        技能矩阵
+      </a>
+    
+      <a href="/archives/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-archive mr-2"></i>
+        技术博客
+      </a>
+    
+      <a href="/contact/" class="btn btn-ghost w-full justify-start text-base-content hover:text-primary flex items-center">
+        <i class="fas fa-envelope mr-2"></i>
+        联系我
+      </a>
+    
+  
 </nav>
 
 
@@ -430,62 +504,357 @@ var _hmt = _hmt || [];
 
   <!-- Content area for Desktop -->
   <div class="lg:ml-80 pt-20 px-4 py-8">
-    <!-- About Section -->
-<div class="container mx-auto px-4 py-8">
-  <h2 class="text-3xl font-bold mb-8 text-base-content">About Me</h2>
+    <div class="container mx-auto px-4 py-8">
+  <article class="prose max-w-none text-base-content">
+    <h3 id="I-前言-📖"><a href="#I-前言-📖" class="headerlink" title="I. 前言 📖"></a><strong>I. 前言 📖</strong></h3><p>欢迎来到 Hexo 静态博客的奇妙世界！本指南将带您从零开始，利用轻量级、高性能的 Hexo 框架，结合全球最大的代码托管平台 GitHub Pages，搭建一个完全属于您自己的、免费且高效的个人博客。我们将不仅教授您 <strong>如何操作</strong>，更会深入剖析 <strong>为什么</strong> 要这样操作，让您彻底掌握 Hexo 博客的搭建与管理。</p>
+<hr>
+<h3 id="II-准备工作-🛠️"><a href="#II-准备工作-🛠️" class="headerlink" title="II. 准备工作 🛠️"></a><strong>II. 准备工作 🛠️</strong></h3><p>在踏上博客搭建之旅前，请确保您的开发环境已准备就绪。这些工具是 Hexo 运行和与 GitHub 交互的基础。</p>
+<ol>
+<li><p><strong>Node.js &amp; npm</strong> 🟢📦</p>
+<ul>
+<li><strong>作用原理</strong>：Hexo 是一个基于 Node.js 的静态站点生成器。<code>npm</code> (Node Package Manager) 是 Node.js 的包管理器，用于安装 Hexo 及其插件。</li>
+<li><strong>检查方法</strong>：打开您的终端（Terminal 或 Command Prompt），输入以下命令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v <span class="comment"># 检查 Node.js 版本</span></span><br><span class="line">npm -v  <span class="comment"># 检查 npm 版本</span></span><br></pre></td></tr></table></figure></li>
+<li><strong>安装提示</strong>：如果未安装，请访问 <a target="_blank" rel="noopener" href="https://nodejs.org/">Node.js 官方网站</a> 下载并安装 <strong>LTS (长期支持)</strong> 版本。</li>
+</ul>
+</li>
+<li><p><strong>Git</strong> 🐙</p>
+<ul>
+<li><strong>作用原理</strong>：Git 是一个分布式版本控制系统，我们将用它来管理您的博客源代码、下载主题、以及最终部署您的网站。</li>
+<li><strong>检查方法</strong>：在终端输入 <code>git --version</code>。</li>
+<li><strong>安装提示</strong>：如果未安装，请访问 <a target="_blank" rel="noopener" href="https://git-scm.com/">Git 官方网站</a> 下载并安装。</li>
+</ul>
+</li>
+<li><p><strong>GitHub 账号与 SSH 配置</strong> 🐈‍⬛🔑</p>
+<ul>
+<li><strong>作用原理</strong>：您需要一个 GitHub 账号来创建仓库。同时，配置 SSH 密钥可以建立您的电脑和 GitHub 之间的信任关系，让您在推送代码时无需重复输入密码。</li>
+<li><strong>操作步骤</strong>：<ol>
+<li>注册 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 账号。</li>
+<li>配置 Git 全局信息：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;您的 GitHub 用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;您的 GitHub 注册邮箱&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>生成并添加 SSH 密钥：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 生成密钥，一路回车</span></span><br><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">&quot;您的 GitHub 注册邮箱&quot;</span></span><br><span class="line"><span class="comment"># 复制公钥</span></span><br><span class="line">pbcopy &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+然后登录 GitHub，进入 <code>Settings -&gt; SSH and GPG keys -&gt; New SSH key</code>，粘贴并保存。</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h3 id="III-Hexo-博客初始化与文件结构解析-🏗️"><a href="#III-Hexo-博客初始化与文件结构解析-🏗️" class="headerlink" title="III. Hexo 博客初始化与文件结构解析 🏗️"></a><strong>III. Hexo 博客初始化与文件结构解析 🏗️</strong></h3><h4 id="1-安装-Hexo-CLI-命令行工具-💻"><a href="#1-安装-Hexo-CLI-命令行工具-💻" class="headerlink" title="1. 安装 Hexo CLI 命令行工具 💻"></a><strong>1. 安装 Hexo CLI 命令行工具 💻</strong></h4><ul>
+<li><strong>命令</strong>：<code>npm install -g hexo-cli</code></li>
+<li><strong>原理</strong>：<code>-g</code> 参数（global）会将 <code>hexo</code> 命令安装为全局命令，让您可以在系统的任何路径下调用它来管理您的博客项目。</li>
+</ul>
+<h4 id="2-初始化博客项目-🆕"><a href="#2-初始化博客项目-🆕" class="headerlink" title="2. 初始化博客项目 🆕"></a><strong>2. 初始化博客项目 🆕</strong></h4><ul>
+<li><strong>命令</strong>：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init MyHexoBlog &amp;&amp; <span class="built_in">cd</span> MyHexoBlog</span><br></pre></td></tr></table></figure></li>
+<li><strong>原理</strong>：<code>hexo init</code> 会从 Hexo 的官方模板仓库 <code>clone</code> 一个包含所有基础文件的项目框架。</li>
+</ul>
+<h4 id="3-安装项目依赖-🧩"><a href="#3-安装项目依赖-🧩" class="headerlink" title="3. 安装项目依赖 🧩"></a><strong>3. 安装项目依赖 🧩</strong></h4><ul>
+<li><strong>命令</strong>：<code>npm install</code></li>
+<li><strong>原理</strong>：此命令会读取项目根目录下的 <code>package.json</code> 文件，并从 npm 仓库下载所有在 <code>dependencies</code> 中声明的必需模块（如渲染器、部署器等）到 <code>node_modules</code> 目录。</li>
+</ul>
+<h4 id="4-Hexo-文件目录功能深度解析-📂"><a href="#4-Hexo-文件目录功能深度解析-📂" class="headerlink" title="4. Hexo 文件目录功能深度解析 📂"></a><strong>4. Hexo 文件目录功能深度解析 📂</strong></h4><ul>
+<li><code>_config.yml</code> ⚙️<ul>
+<li><strong>功能</strong>：<strong>站点配置文件</strong>。这是 Hexo 博客的 <strong>全局配置文件</strong>，用于设置整个网站的标题、副标题、描述、URL、语言、时区、分页、文章链接格式、默认主题、部署方式等所有核心配置。</li>
+<li><strong>原理</strong>：Hexo 在生成网站时会读取此文件，根据其中的配置来渲染页面、处理文章和部署。</li>
+<li><strong>注意点</strong> ⚠️：YAML 格式对缩进非常敏感，请务必使用 <strong>两个空格</strong> 而非 Tab 键进行缩进。错误的缩进会导致配置解析失败。</li>
+</ul>
+</li>
+<li><code>package.json</code> 📦<ul>
+<li><strong>功能</strong>：Node.js 项目的配置文件。记录了项目的名称、版本、依赖包列表（<code>dependencies</code>）、脚本命令等信息。</li>
+<li><strong>原理</strong>：<code>npm install</code> 命令会根据此文件安装依赖；<code>npm run &lt;script_name&gt;</code> 命令会执行其中定义的脚本。</li>
+</ul>
+</li>
+<li><code>scaffolds/</code> 📝<ul>
+<li><strong>功能</strong>：<strong>模板文件夹</strong>。存放文章、页面、草稿等内容的 <strong>模板文件</strong>。当您使用 <code>hexo new &lt;layout&gt; &lt;title&gt;</code> 命令创建新内容时，Hexo 会根据这里的模板生成文件。</li>
+<li><strong>原理</strong>：这些模板定义了新创建内容的默认 Front-matter（元数据）结构。</li>
+</ul>
+</li>
+<li><code>source/</code> 📂<ul>
+<li><strong>功能</strong>：<strong>源文件文件夹</strong>。存放您博客的所有原始内容，包括文章、页面、图片等。这是您博客内容的“心脏”。</li>
+<li><strong>原理</strong>：Hexo 会扫描此目录下的所有文件，并根据其类型和 Front-matter 进行处理。</li>
+<li><strong>子目录</strong>：<ul>
+<li><code>_posts/</code> ✍️：<strong>存放您的所有博客文章</strong>（Markdown 格式）。</li>
+<li><code>_data/</code> 📊：<strong>[关键]</strong> 存放主题可能需要的额外数据文件（如 <code>.yml</code>），这些数据会通过 <code>site.data</code> 变量在主题中访问。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>themes/</code> 🎨<ul>
+<li><strong>功能</strong>：<strong>主题文件夹</strong>。存放您安装的所有 Hexo 主题。每个主题都有自己的子文件夹。</li>
+<li><strong>原理</strong>：主题定义了您博客的视觉外观和布局。Hexo 会根据 <code>_config.yml</code> 中 <code>theme</code> 字段指定的名称，加载对应的文件夹作为当前主题。</li>
+</ul>
+</li>
+<li><code>public/</code> 🌐 (自动生成)<ul>
+<li><strong>功能</strong>：<strong>公共文件夹</strong>。<code>hexo generate</code> 命令会在这里生成所有静态文件。<strong>永远不要手动修改此文件夹</strong>。</li>
+<li><strong>原理</strong>：这是 Hexo 静态站点生成的核心输出。</li>
+</ul>
+</li>
+<li><code>db.json</code> 💾 (自动生成)<ul>
+<li><strong>功能</strong>：Hexo 的数据缓存文件，<code>hexo clean</code> 会删除它。</li>
+</ul>
+</li>
+<li><code>node_modules/</code> 🧩 (自动生成)<ul>
+<li><strong>功能</strong>：存放所有项目依赖的模块。<strong>不应提交到 Git</strong>。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="IV-主题配置与架构深度解析-🎨"><a href="#IV-主题配置与架构深度解析-🎨" class="headerlink" title="IV. 主题配置与架构深度解析 🎨"></a><strong>IV. 主题配置与架构深度解析 🎨</strong></h3><h4 id="1-克隆主题-📥"><a href="#1-克隆主题-📥" class="headerlink" title="1. 克隆主题 📥"></a><strong>1. 克隆主题 📥</strong></h4><ul>
+<li><strong>命令</strong>：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/jiehua1995/hexo-theme-researcher.git themes/researcher</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="2-激活主题-💡"><a href="#2-激活主题-💡" class="headerlink" title="2. 激活主题 💡"></a><strong>2. 激活主题 💡</strong></h4><ul>
+<li><strong>文件路径</strong>：<code>_config.yml</code> (项目根目录下的 <strong>站点配置文件</strong>)</li>
+<li><strong>修改内容</strong>：找到 <code>theme:</code> 这一行，将其值改为 <code>researcher</code>。</li>
+</ul>
+<h4 id="3-主题目录下的文件及文件夹功能深度解析-📂"><a href="#3-主题目录下的文件及文件夹功能深度解析-📂" class="headerlink" title="3. 主题目录下的文件及文件夹功能深度解析 📂"></a><strong>3. 主题目录下的文件及文件夹功能深度解析 📂</strong></h4><p>每个 Hexo 主题都是一个独立的、功能完备的“皮肤包”。理解其内部结构，是进行个性化定制、解决显示问题、甚至开发自己功能的基础。我们将以 <code>hexo-theme-researcher</code> 为例，层层剖析。</p>
+<ul>
+<li><p><code>_config.yml</code> ⚙️</p>
+<ul>
+<li><strong>功能</strong>：<strong>主题配置文件</strong>。这是<strong>主题专属</strong>的“控制面板”，独立于您博客根目录下的站点 <code>_config.yml</code>。它负责控制所有与主题外观和功能相关的选项。</li>
+<li><strong>原理</strong> 🧠：当 Hexo 渲染页面时，会首先读取站点的 <code>_config.yml</code>，然后再读取主题的 <code>_config.yml</code>。主题模板（<code>.ejs</code> 文件）通过 <code>theme.</code> 这个变量来访问此文件中的配置项（例如 <code>theme.avatar</code>, <code>theme.menu</code>）。</li>
+<li><strong><code>researcher</code> 主题中的例子</strong>：<ul>
+<li><code>menu</code>: 控制导航栏的显示内容和链接。</li>
+<li><code>avatar</code>: 定义头像图片的路径。</li>
+<li><code>academic_profiles</code>: 配置您的 Google Scholar、GitHub 等学术社交链接。</li>
+<li><code>daisyui</code>: <code>researcher</code> 主题使用 DaisyUI 库，这里允许您配置启用的颜色主题。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>layout/</code> 🖼️</p>
+<ul>
+<li><strong>功能</strong>：<strong>布局与模板文件夹</strong>。这是主题的“骨架”，决定了您网站的 HTML 结构。该文件夹下的 <code>.ejs</code> 文件（EJS 是一种模板引擎）是最终生成 HTML 页面的“模具”。</li>
+<li><strong>原理</strong> 🧠：当 Hexo 生成一个页面时，它会首先根据该页面的 Front-matter <code>layout</code> 属性，在此文件夹中寻找同名的 <code>.ejs</code> 文件。如果找不到，它会使用默认的 <code>page.ejs</code> 或 <code>post.ejs</code>。这些模具最终通常会嵌套在 <code>layout.ejs</code> 这个主布局文件中。</li>
+<li><strong><code>researcher</code> 主题中的例子</strong>：<ul>
+<li><code>layout.ejs</code>：最顶层的母版页，定义了所有页面共享的 <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code> 结构。</li>
+<li><code>partials/</code>：存放“局部”或“可重用”的模板片段，如 <code>header.ejs</code>, <code>sidebar.ejs</code>, <code>footer.ejs</code>。</li>
+<li><code>index.ejs</code>: 博客主页（文章列表）的布局。</li>
+<li><code>post.ejs</code>: 单篇文章页面的布局。</li>
+<li><code>publications.ejs</code>, <code>projects.ejs</code>, <code>cv.ejs</code>: 这些都是我们为特定页面创建的自定义布局。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>source/</code> 📦</p>
+<ul>
+<li><strong>功能</strong>：<strong>主题自身的前端静态资源文件夹</strong>。存放主题正常工作所需的 CSS、JavaScript、图片、字体等文件。</li>
+<li><strong>原理</strong> 🧠：在 <code>hexo generate</code> 过程中，此文件夹下的所有内容都会被原封不动地复制到最终的 <code>public</code> 目录中，供浏览器加载。</li>
+<li><strong><code>researcher</code> 主题中的例子</strong>：<ul>
+<li><code>css/</code> 💅: 存放主题的样式表，如 <code>style.css</code> 和 <code>tailwind.css</code>。</li>
+<li><code>js/</code> 📜: 存放主题所需的 JavaScript 脚本。</li>
+<li><code>images/</code> 🖼️: 存放主题自带的图片，例如默认的头像 <code>avatar.jpg</code>。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>languages/</code> 🗣️</p>
+<ul>
+<li><strong>功能</strong>：<strong>多语言文件夹</strong>。用于实现主题的国际化 (i18n)。</li>
+<li><strong>原理</strong> 🧠：该目录下会存放 <code>en.yml</code>, <code>zh-CN.yml</code> 等语言文件，定义了主题中硬编码文本（如“阅读更多”）在不同语言下的翻译。Hexo 会根据您在<strong>站点</strong> <code>_config.yml</code> 中设置的 <code>language</code> 字段，自动加载对应的语言文件。</li>
+</ul>
+</li>
+<li><p><code>scripts/</code> 📜</p>
+<ul>
+<li><strong>功能</strong>：<strong>主题自定义脚本文件夹</strong>。存放 Node.js 脚本，用于在 Hexo 生成期间扩展其功能。</li>
+<li><strong>原理</strong> 🧠：Hexo 在启动时会自动加载此文件夹下的所有 <code>.js</code> 文件。您可以在这里编写脚本来注册自定义的“标签插件”（Tag Plugins）或“辅助函数”（Helpers）。</li>
+</ul>
+</li>
+<li><p><code>demo_data/</code> 📊</p>
+<ul>
+<li><strong>功能</strong>：<strong>示例数据文件夹</strong>。主题作者提供的 <code>.yml</code> 格式的示例数据，用于展示主题功能和数据结构。</li>
+<li><strong>原理</strong> 🧠：这些文件本身在主题中不起任何作用，它们的存在是为了作为“模板”，告诉用户应该在自己博客的 <code>source/_data/</code> 目录下创建什么样结构的数据文件。</li>
+</ul>
+</li>
+</ul>
+<h4 id="4-实战问题解析（一）：修复主题渲染错误-🐛➡️✅"><a href="#4-实战问题解析（一）：修复主题渲染错误-🐛➡️✅" class="headerlink" title="4. 实战问题解析（一）：修复主题渲染错误 🐛➡️✅"></a><strong>4. 实战问题解析（一）：修复主题渲染错误 🐛➡️✅</strong></h4><ul>
+<li><strong>问题现象</strong>：运行 <code>hexo server</code> 后，页面显示 <code>TypeError: Cannot read properties of undefined (reading &#39;filter&#39;)</code>。</li>
+<li><strong>问题根源</strong>：主题模板需要 <code>source/_data/</code> 目录下的数据文件（如 <code>publications.yml</code>）来渲染页面，但这些文件在您的项目中尚不存在，导致模板访问了 <code>undefined</code> 而报错。</li>
+<li><strong>解决方案</strong>：<ol>
+<li><strong>提供数据</strong>：将主题作者提供的示例数据复制到您的项目中。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p <span class="built_in">source</span>/_data &amp;&amp; <span class="built_in">cp</span> themes/researcher/demo_data/*.yml <span class="built_in">source</span>/_data/</span><br></pre></td></tr></table></figure></li>
+<li><strong>提供布局</strong>：为主题菜单中定义的每个页面创建对应的文件，并指定正确的 <code>layout</code>。<ul>
+<li><strong>创建页面</strong>: <code>hexo new page publications &amp;&amp; hexo new page projects &amp;&amp; ...</code></li>
+<li><strong>修改布局</strong>: 打开 <code>source/publications/index.md</code> 等文件，修改其 Front-matter。<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Publications</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">publications</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="V-部署与“创世”备份"><a href="#V-部署与“创世”备份" class="headerlink" title="V. 部署与“创世”备份"></a><strong>V. 部署与“创世”备份</strong></h3><h4 id="1-核心概念：git-push-vs-hexo-deploy"><a href="#1-核心概念：git-push-vs-hexo-deploy" class="headerlink" title="1. 核心概念：git push vs hexo deploy"></a><strong>1. 核心概念：<code>git push</code> vs <code>hexo deploy</code></strong></h4><ul>
+<li><code>git push</code>: <strong>推送源码</strong>。这是将你的博客“原材料”（<code>.md</code> 文件、配置文件等）备份到你的<strong>源码仓库</strong>。这<strong>不会</strong>让你的网站上线。</li>
+<li><code>hexo deploy</code>: <strong>部署网站</strong>。这是运行 <code>hexo g</code> 将网站生成为静态文件，然后将这些<strong>最终产物</strong>推送到你的<strong>部署仓库</strong>，这才会让你的网站更新上线。</li>
+</ul>
+<h4 id="2-创建-GitHub-仓库"><a href="#2-创建-GitHub-仓库" class="headerlink" title="2. 创建 GitHub 仓库"></a><strong>2. 创建 GitHub 仓库</strong></h4><ul>
+<li><strong>源码仓库</strong>：创建一个<strong>私有</strong>仓库，如 <code>MyHexoBlog-source</code>。</li>
+<li><strong>部署仓库</strong>：创建一个<strong>公开</strong>仓库，严格命名为 <code>&lt;Your-Username&gt;.github.io</code>。</li>
+</ul>
+<h4 id="3-配置部署信息"><a href="#3-配置部署信息" class="headerlink" title="3. 配置部署信息"></a><strong>3. 配置部署信息</strong></h4><ul>
+<li><strong>安装插件</strong>：<code>npm install hexo-deployer-git --save</code></li>
+<li><strong>配置站点 <code>_config.yml</code></strong>：<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">url:</span> <span class="string">https://&lt;Your-Username&gt;.github.io</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">git@github.com:&lt;Your-Username&gt;/&lt;Your-Username&gt;.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">main</span></span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="4-关键-创建“创世”还原点"><a href="#4-关键-创建“创世”还原点" class="headerlink" title="4. [关键] 创建“创世”还原点"></a><strong>4. [关键] 创建“创世”还原点</strong></h4><ul>
+<li><strong>原理</strong>：将当前这个完美配置好的“精装房”状态，作为一个永恒的、可随时回归的“创世”快照，提交并备份到您的<strong>源码仓库</strong>。</li>
+<li><strong>命令</strong>：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 0. (如果之前没做) 解决嵌套仓库问题</span></span><br><span class="line"><span class="comment"># rm -rf themes/researcher/.git</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 1. 初始化 Git 仓库</span></span><br><span class="line">git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 关联到你的【源码仓库】</span></span><br><span class="line">git remote add origin git@github.com:&lt;Your-Username&gt;/MyHexoBlog-source.git</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 将所有文件添加到暂存区</span></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line"><span class="comment"># 4. 创建提交，这就是你的“还原点”</span></span><br><span class="line">git commit -m <span class="string">&quot;Initial commit: Stable baseline with a fully configured theme.&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 5. 推送到 GitHub 源码仓库进行备份</span></span><br><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="5-实战问题解析（二）：解决线上-404"><a href="#5-实战问题解析（二）：解决线上-404" class="headerlink" title="5. 实战问题解析（二）：解决线上 404"></a><strong>5. 实战问题解析（二）：解决线上 404</strong></h4><ul>
+<li><strong>问题现象</strong>：本地 <code>hexo server</code> 预览正常，但部署后访问线上地址（如 <code>.../publications/</code>）却是 404。</li>
+<li><strong>问题根源</strong>：您只执行了 <code>git push</code>，将源码备份了，但没有执行 <code>hexo deploy</code> 来生成并发布您的网站。</li>
+<li><strong>解决方案</strong>：执行部署命令。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo deploy --generate</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<h3 id="VI-个性化定制实战"><a href="#VI-个性化定制实战" class="headerlink" title="VI. 个性化定制实战"></a><strong>VI. 个性化定制实战</strong></h3><h4 id="6-1-场景一：修改个人信息"><a href="#6-1-场景一：修改个人信息" class="headerlink" title="6.1 场景一：修改个人信息"></a><strong>6.1 场景一：修改个人信息</strong></h4><ul>
+<li><strong>目标</strong>：将博客的作者、头像、社交链接等替换为您自己的信息。</li>
+<li><strong>位置</strong>：<code>themes/researcher/_config.yml</code> (主题配置文件)。</li>
+<li><strong>操作</strong>：打开此文件，根据其中的注释，逐一修改 <code>avatar</code> (替换 <code>themes/researcher/source/images/avatar.jpg</code> 图片文件), <code>about</code>, <code>academic_profiles</code>, <code>contact</code> 等字段。</li>
+</ul>
+<h4 id="6-2-场景二：管理动态内容-如-Publications"><a href="#6-2-场景二：管理动态内容-如-Publications" class="headerlink" title="6.2 场景二：管理动态内容 (如 Publications)"></a><strong>6.2 场景二：管理动态内容 (如 Publications)</strong></h4><ul>
+<li><strong>目标</strong>：在“出版物”页面新增一条您自己的记录。</li>
+<li><strong>位置</strong>：<code>source/_data/publications.yml</code>。</li>
+<li><strong>原理</strong>:<blockquote>
+<p>此 YAML 文件是一个结构化数据列表。主题的 <code>layout/publications.ejs</code> 模板文件内部有 EJS 逻辑（类似于 <code>site.data.publications.forEach(...)</code>），它会遍历此列表中的每一个条目，并将每个条目的 <code>title</code>, <code>authors</code> 等属性填充到预设的 HTML 结构中，从而动态生成您看到的列表。</p>
+</blockquote>
+</li>
+<li><strong>操作</strong>：模仿该文件中已有的条目格式（注意 YAML 的 <code>-</code> 和缩进），复制并修改为您自己的内容。</li>
+</ul>
+<h4 id="6-3-实战场景三：添加全新的“作品集-Portfolio-”页面"><a href="#6-3-实战场景三：添加全新的“作品集-Portfolio-”页面" class="headerlink" title="6.3 实战场景三：添加全新的“作品集(Portfolio)”页面"></a><strong>6.3 实战场景三：添加全新的“作品集(Portfolio)”页面</strong></h4><ul>
+<li><strong>目标</strong>：从零开始，为您的博客创建一个展示图片和描述的独立作品集页面。</li>
+<li><strong>操作流程</strong>：<ol>
+<li><strong>创建数据源</strong>：在 <code>source/_data/</code> 目录下新建 <code>portfolio.yml</code> 文件，并添加您的项目数据。</li>
+<li><strong>创建布局文件</strong>：在 <code>themes/researcher/layout/</code> 目录下，新建 <code>portfolio.ejs</code> 文件，并写入 EJS 代码以遍历和显示 <code>site.data.portfolio</code> 中的数据。</li>
+<li><strong>创建页面文件</strong>：<code>hexo new page portfolio</code>。</li>
+<li><strong>修改页面 Front-matter</strong>：打开 <code>source/portfolio/index.md</code>，设置 <code>layout: portfolio</code>。</li>
+<li><strong>添加菜单项</strong>：打开 <code>themes/researcher/_config.yml</code>，在 <code>menu</code> 部分添加新页面的链接。</li>
+<li><strong>添加图片资源</strong>：将作品集图片放入 <code>themes/researcher/source/images/portfolio/</code> 目录。</li>
+<li><strong>预览</strong>：运行 <code>hexo server</code> 查看效果。</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="VII-日常维护与未来规划"><a href="#VII-日常维护与未来规划" class="headerlink" title="VII. 日常维护与未来规划"></a><strong>VII. 日常维护与未来规划</strong></h3><h4 id="7-1-黄金工作流-日常"><a href="#7-1-黄金工作流-日常" class="headerlink" title="7.1 黄金工作流 (日常)"></a><strong>7.1 黄金工作流 (日常)</strong></h4><ol>
+<li><strong>本地预览</strong>：<code>hexo server</code>，在 <code>http://localhost:4000</code> 实时查看修改。</li>
+<li><strong>内容创作</strong>：修改或撰写 <code>.md</code> 文件。</li>
+<li><strong>[推荐] 备份源码</strong>：<code>git add . &amp;&amp; git commit -m &quot;Update: ...&quot; &amp;&amp; git push</code></li>
+<li><strong>发布网站</strong>：<code>hexo clean &amp;&amp; hexo deploy --generate</code></li>
+</ol>
+<h4 id="7-2-维护案例一：更新简历"><a href="#7-2-维护案例一：更新简历" class="headerlink" title="7.2 维护案例一：更新简历"></a><strong>7.2 维护案例一：更新简历</strong></h4><ul>
+<li><strong>场景</strong>：您有了一份新的 PDF 简历需要替换旧的。</li>
+<li><strong>操作</strong>：将新 PDF 放入 <code>source/files/</code>，然后修改 <code>themes/researcher/_config.yml</code> 中的 <code>cv.download_link</code> 路径，最后重新部署。</li>
+</ul>
+<h4 id="7-3-维护案例二：更换域名"><a href="#7-3-维护案例二：更换域名" class="headerlink" title="7.3 维护案例二：更换域名"></a><strong>7.3 维护案例二：更换域名</strong></h4><ul>
+<li><strong>场景</strong>：您购买了个人域名 <code>www.my-awesome-blog.com</code>。</li>
+<li><strong>操作</strong>：<ol>
+<li>在域名提供商处，将域名 CNAME 解析到 <code>&lt;Your-Username&gt;.github.io</code>。</li>
+<li>在 <code>source/</code> 目录下创建 <code>CNAME</code> 文件，内容为您的新域名。</li>
+<li>修改<strong>站点</strong> <code>_config.yml</code> 的 <code>url</code> 为新域名。</li>
+<li>重新部署。</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h3 id="VIII-高级技巧与拓展"><a href="#VIII-高级技巧与拓展" class="headerlink" title="VIII. 高级技巧与拓展"></a><strong>VIII. 高级技巧与拓展</strong></h3><h4 id="8-1-高级-Git-技巧：使用分支进行无风险修改"><a href="#8-1-高级-Git-技巧：使用分支进行无风险修改" class="headerlink" title="8.1 高级 Git 技巧：使用分支进行无风险修改"></a><strong>8.1 高级 Git 技巧：使用分支进行无风险修改</strong></h4><ul>
+<li><strong>场景</strong>：想对主题进行一次大的修改，但不确定效果，也不想污染您干净的 <code>master</code> 分支。</li>
+<li><strong>操作</strong>：<ol>
+<li><strong>创建并切换到新分支</strong>：<code>git checkout -b redesign-theme</code></li>
+<li><strong>进行修改和提交</strong>：在新分支上任意修改和 <code>git commit</code>。</li>
+<li><strong>切换回主分支</strong>：<code>git checkout master</code> (工作区将恢复原样)。</li>
+<li><strong>合并分支</strong>：如果对修改满意，<code>git merge redesign-theme</code>。</li>
+</ol>
+</li>
+</ul>
+<h4 id="8-2-高级-Hexo-技巧：Front-matter-默认值"><a href="#8-2-高级-Hexo-技巧：Front-matter-默认值" class="headerlink" title="8.2 高级 Hexo 技巧：Front-matter 默认值"></a><strong>8.2 高级 Hexo 技巧：Front-matter 默认值</strong></h4><ul>
+<li><strong>场景</strong>：所有文章都有固定的分类或作者，每次都重复写很麻烦。</li>
+<li><strong>操作</strong>：在<strong>站点</strong> <code>_config.yml</code> 中添加 <code>front_matter</code> 配置来设置默认值。</li>
+</ul>
+<h4 id="8-3-自动化部署-CI-CD-概念"><a href="#8-3-自动化部署-CI-CD-概念" class="headerlink" title="8.3 自动化部署 (CI&#x2F;CD) 概念"></a><strong>8.3 自动化部署 (CI&#x2F;CD) 概念</strong></h4><ul>
+<li><strong>场景</strong>：希望实现“只要将源码推送到 GitHub，网站就自动部署”。</li>
+<li><strong>原理</strong>：使用 <strong>GitHub Actions</strong> 在云端服务器上自动执行 <code>hexo deploy</code> 命令。</li>
+<li><strong>实现</strong>：在源码仓库中创建 <code>.github/workflows/deploy.yml</code> 文件并编写工作流脚本。这是一个高级主题，可搜索“Hexo GitHub Actions”获取详细教程。</li>
+</ul>
+<hr>
+<h3 id="附录：常用命令速查手册"><a href="#附录：常用命令速查手册" class="headerlink" title="附录：常用命令速查手册"></a><strong>附录：常用命令速查手册</strong></h3><h4 id="Hexo-核心命令"><a href="#Hexo-核心命令" class="headerlink" title="Hexo 核心命令"></a><strong>Hexo 核心命令</strong></h4><table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">简写</th>
+<th align="left">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>hexo init [folder]</code></td>
+<td align="left"><code>h i</code></td>
+<td align="left">初始化一个新项目。</td>
+</tr>
+<tr>
+<td align="left"><code>hexo new [layout] &lt;title&gt;</code></td>
+<td align="left"><code>h n</code></td>
+<td align="left">创建一篇新文章或页面。</td>
+</tr>
+<tr>
+<td align="left"><code>hexo generate</code></td>
+<td align="left"><code>h g</code></td>
+<td align="left">生成静态文件到 <code>public</code> 目录。</td>
+</tr>
+<tr>
+<td align="left"><code>hexo server</code></td>
+<td align="left"><code>h s</code></td>
+<td align="left">启动本地预览服务器。</td>
+</tr>
+<tr>
+<td align="left"><code>hexo deploy</code></td>
+<td align="left"><code>h d</code></td>
+<td align="left">部署网站。</td>
+</tr>
+<tr>
+<td align="left"><code>hexo clean</code></td>
+<td align="left"></td>
+<td align="left">清除缓存和 <code>public</code> 目录。</td>
+</tr>
+</tbody></table>
+<h4 id="Git-核心命令"><a href="#Git-核心命令" class="headerlink" title="Git 核心命令"></a><strong>Git 核心命令</strong></h4><table>
+<thead>
+<tr>
+<th align="left">命令</th>
+<th align="left">功能</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><code>git init</code></td>
+<td align="left">初始化本地仓库。</td>
+</tr>
+<tr>
+<td align="left"><code>git add &lt;file&gt;</code></td>
+<td align="left">将文件添加到暂存区。</td>
+</tr>
+<tr>
+<td align="left"><code>git commit -m &quot;message&quot;</code></td>
+<td align="left">创建一个提交。</td>
+</tr>
+<tr>
+<td align="left"><code>git push</code></td>
+<td align="left">推送本地提交到远程仓库。</td>
+</tr>
+<tr>
+<td align="left"><code>git pull</code></td>
+<td align="left">拉取远程仓库的最新更改。</td>
+</tr>
+<tr>
+<td align="left"><code>git status</code></td>
+<td align="left">查看当前工作区状态。</td>
+</tr>
+<tr>
+<td align="left"><code>git log</code></td>
+<td align="left">查看提交历史。</td>
+</tr>
+<tr>
+<td align="left"><code>git checkout &lt;branch/commit&gt;</code></td>
+<td align="left">切换分支或恢复到指定提交。</td>
+</tr>
+<tr>
+<td align="left"><code>git reset --hard &lt;commit&gt;</code></td>
+<td align="left"><strong>[危险]</strong> 彻底回退到指定提交状态。</td>
+</tr>
+</tbody></table>
 
-  <!-- Avatar -->
-  <div class="p-4 text-center border-base-300 flex flex-col items-center cursor-pointer lg:hidden">
-    <div class="avatar mb-4">
-      <div class="w-24 rounded-full ring ring-primary ring-offset-base-100">
-        <img
-          src="/images/avatar.jpg"
-          alt="Profile"
-          class="transition-transform duration-500 hover:rotate-210 cursor-pointer rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 w-24"
-        />
-      </div>
-    </div>
-    <h2 class="text-xl font-bold text-base-content">张三</h2>
-    <p class="text-base-content opacity-80"></p>
-  </div>
-
-<!--About-->
-  <div class="card glass rounded-box shadow-lg bg-base-100 text-base-content">
-    <div class="card-body">
-      <div class="prose max-w-none text-base">
-        5年经验全栈工程师 | Java/Vue.js | 微服务架构
-      </div>
-    </div>
-  </div>
+  </article>
 </div>
-
-<!-- Featured Publications -->
-<div class="container mx-auto px-4 py-8">
-  <h2 class="text-3xl font-bold mb-8 text-base-content">Featured Publications</h2>
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    
-  </div>
-
-  <!-- View All -->
-  <div class="text-center mt-8">
-    <a href="/publications" class="btn btn-primary">View All Publications</a>
-  </div>
-</div>
-
-
-
-<!-- Featured Projects -->
-<div class="container mx-auto px-4 py-8">
-  <h2 class="text-3xl font-bold mb-8 text-base-content">Featured Projects</h2>
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-    
-  </div>
-  <div class="text-center mt-8">
-    <a href="/projects" class="btn btn-primary">View All Projects</a>
-  </div>
-</div>
-
   </div>
 
   <!-- Fixed top navbar for desktop -->
